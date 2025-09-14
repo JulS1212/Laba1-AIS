@@ -1,0 +1,12 @@
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.dll
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\Model.dll
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.pdb
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\bin\Debug\Model.pdb
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleA.A9EA4B6A.Up2Date
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\Yulia-PC\source\repos\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb

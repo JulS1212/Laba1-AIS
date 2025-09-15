@@ -22,3 +22,16 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleA.A9EA4B6A.Up2Date
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.exe
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.exe
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Model.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Model.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleA.A9EA4B6A.Up2Date

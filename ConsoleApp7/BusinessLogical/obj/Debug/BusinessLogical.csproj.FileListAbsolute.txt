@@ -7,3 +7,12 @@ C:\Users\Yulia-PC\source\repos\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLog
 C:\Users\Yulia-PC\source\repos\ConsoleApp7\BusinessLogical\obj\Debug\Business.431A909B.Up2Date
 C:\Users\Yulia-PC\source\repos\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.dll
 C:\Users\Yulia-PC\source\repos\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\BusinessLogical.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\BusinessLogical.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Model.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Model.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\obj\Debug\Business.431A909B.Up2Date
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\obj\Debug\BusinessLogical.pdb

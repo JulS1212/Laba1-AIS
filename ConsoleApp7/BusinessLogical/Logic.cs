@@ -11,8 +11,6 @@ namespace BusinessLogical
         List<Painting> Paintings = new List<Painting>();
         public void AddPainting(string title, string artist, int year, string genre)
         {
-            
-
             Painting painting = new Painting()
             {
                 Title = title,
@@ -29,9 +27,14 @@ namespace BusinessLogical
                 p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
                 p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
         }
-        public bool DeletePainting(string title)
+        public Painting GetPainting(string title, string artist)
         {
-            var painting = GetPainting(title);
+            return Paintings.FirstOrDefault(p =>
+                p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) && p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+        }
+        public bool DeletePainting(string title, string artist)
+        {
+            var painting = GetPainting(title, artist);
             if (painting != null)
             {
                 Paintings.Remove(painting);
@@ -39,31 +42,30 @@ namespace BusinessLogical
             }
             return false;
         }
-        public Painting GetPainting(string title)
-        {
-            return Paintings.FirstOrDefault(p =>
-                p.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
-        }
+        
         public List<Painting> GetAllPaintings()
         {
             return new List<Painting>(Paintings);
         }
-        public bool UpdatePainting(string oldTitle, string newTitle, string newArtist, int newYear, string newGenre)
+        public bool UpdatePainting(string oldTitle, string oldArtist, string newTitle, string newArtist, int newYear, string newGenre)
         {
-            // Находим картину по старому названию
+            // Ищем по названию И автору!
             var painting = Paintings.FirstOrDefault(p =>
-                p.Title.Equals(oldTitle, StringComparison.OrdinalIgnoreCase));
+                p.Title.Equals(oldTitle, StringComparison.OrdinalIgnoreCase) &&
+                p.Artist.Equals(oldArtist, StringComparison.OrdinalIgnoreCase));
 
             if (painting != null)
             {
-                // Проверяем, что новое название не конфликтует с существующими
-                if (!oldTitle.Equals(newTitle, StringComparison.OrdinalIgnoreCase) &&
-                    Paintings.Any(p => p.Title.Equals(newTitle, StringComparison.OrdinalIgnoreCase)))
+                // Проверяем уникальность нового названия+автора
+                if ((!oldTitle.Equals(newTitle, StringComparison.OrdinalIgnoreCase) ||
+                     !oldArtist.Equals(newArtist, StringComparison.OrdinalIgnoreCase)) &&
+                    Paintings.Any(p =>
+                        p.Title.Equals(newTitle, StringComparison.OrdinalIgnoreCase) &&
+                        p.Artist.Equals(newArtist, StringComparison.OrdinalIgnoreCase)))
                 {
-                    throw new ArgumentException("Картина с таким названием уже существует!");
+                    throw new ArgumentException("Картина с таким названием и автором уже существует!");
                 }
 
-                // Обновляем данные
                 painting.Title = newTitle;
                 painting.Artist = newArtist;
                 painting.Year = newYear;
@@ -71,7 +73,6 @@ namespace BusinessLogical
 
                 return true;
             }
-
             return false;
         }
         public Dictionary<string, List<Painting>> GroupByGenre()

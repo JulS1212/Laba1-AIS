@@ -11,7 +11,7 @@ namespace ConsoleApp7
 
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.Title = "Управление коллекцией картин";
 
             // Главный цикл приложения
@@ -78,6 +78,13 @@ namespace ConsoleApp7
 
                 Console.Write("Автор: ");
                 string artist = Console.ReadLine();
+                // Проверяем, не существует ли уже такая картина
+                if (logic.GetPainting(title, artist) != null)
+                {
+                    Console.WriteLine("Картина с таким названием уже существует!");
+                    Console.ReadKey();
+                    return;
+                }
 
                 Console.Write("Год создания: ");
                 if (!int.TryParse(Console.ReadLine(), out int year) || year < 1000 || year > DateTime.Now.Year)
@@ -90,22 +97,16 @@ namespace ConsoleApp7
                 Console.Write("Жанр: ");
                 string genre = Console.ReadLine();
 
-                // Проверяем, не существует ли уже такая картина
-                if (logic.GetPainting(title) != null)
-                {
-                    Console.WriteLine("Картина с таким названием уже существует!");
-                    Console.ReadKey();
-                    return;
-                }
+                
 
                 // Добавляем картину через слой логики
                 logic.AddPainting(title, artist, year, genre);
 
-                Console.WriteLine("\n✅ Картина успешно добавлена!");
+                Console.WriteLine("\nКартина успешно добавлена!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Ошибка при добавлении: {ex.Message}");
+                Console.WriteLine($"Ошибка при добавлении: {ex.Message}");
             }
 
             Console.WriteLine("Нажмите любую клавишу для продолжения...");
@@ -132,10 +133,10 @@ namespace ConsoleApp7
 
                 foreach (var painting in paintings)
                 {
-                    Console.WriteLine($"🎨 {painting.Title}");
-                    Console.WriteLine($"   👨‍🎨 Автор: {painting.Artist}");
-                    Console.WriteLine($"   📅 Год: {painting.Year}");
-                    Console.WriteLine($"   🏷️  Жанр: {painting.Genre}");
+                    Console.WriteLine($"{painting.Title}");
+                    Console.WriteLine($"{painting.Artist}");
+                    Console.WriteLine($"{painting.Year}");
+                    Console.WriteLine($"{painting.Genre}");
                     Console.WriteLine("   " + new string('─', 40));
                 }
             }
@@ -155,6 +156,9 @@ namespace ConsoleApp7
             Console.Write("Введите название картины для удаления: ");
             string title = Console.ReadLine();
 
+            Console.Write("Введите автора картины для удаления: ");
+            string artist = Console.ReadLine();
+
             if (string.IsNullOrWhiteSpace(title))
             {
                 Console.WriteLine("Название не может быть пустым!");
@@ -163,7 +167,7 @@ namespace ConsoleApp7
             }
 
             // Проверяем, существует ли картина
-            var painting = logic.GetPainting(title);
+            var painting = logic.GetPainting(title,artist);
             if (painting == null)
             {
                 Console.WriteLine("Картина с таким названием не найдена!");
@@ -178,18 +182,18 @@ namespace ConsoleApp7
             Console.WriteLine($"Год: {painting.Year}");
             Console.WriteLine($"Жанр: {painting.Genre}");
 
-            Console.Write("\n❌ Вы уверены, что хотите удалить эту картину? (д/н): ");
+            Console.Write("\nВы уверены, что хотите удалить эту картину? (д/н): ");
             string confirmation = Console.ReadLine();
 
-            if (confirmation.ToLower() == "д" || confirmation.ToLower() == "y")
+            if (confirmation.ToLower() == "д")
             {
-                if (logic.DeletePainting(title))
+                if (logic.DeletePainting(title, artist))
                 {
-                    Console.WriteLine("✅ Картина успешно удалена!");
+                    Console.WriteLine(" Картина успешно удалена!");
                 }
                 else
                 {
-                    Console.WriteLine("❌ Не удалось удалить картину!");
+                    Console.WriteLine(" Не удалось удалить картину!");
                 }
             }
             else
@@ -212,6 +216,9 @@ namespace ConsoleApp7
             Console.Write("Введите название картины для изменения: ");
             string oldTitle = Console.ReadLine();
 
+            Console.Write("Введите автора картины для изменения: ");
+            string oldArtist = Console.ReadLine();
+
             if (string.IsNullOrWhiteSpace(oldTitle))
             {
                 Console.WriteLine("Название не может быть пустым!");
@@ -220,7 +227,7 @@ namespace ConsoleApp7
             }
 
             // Проверяем, существует ли картина
-            var oldPainting = logic.GetPainting(oldTitle);
+            var oldPainting = logic.GetPainting(oldTitle,oldArtist);
             if (oldPainting == null)
             {
                 Console.WriteLine("Картина с таким названием не найдена!");
@@ -254,18 +261,18 @@ namespace ConsoleApp7
 
             try
             {
-                if (logic.UpdatePainting(oldTitle, newTitle, newArtist, newYear, newGenre))
+                if (logic.UpdatePainting(oldTitle, oldArtist, newTitle, newArtist, newYear, newGenre))
                 {
-                    Console.WriteLine("✅ Картина успешно обновлена!");
+                    Console.WriteLine(" Картина успешно обновлена!");
                 }
                 else
                 {
-                    Console.WriteLine("❌ Не удалось обновить картину!");
+                    Console.WriteLine(" Не удалось обновить картину!");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Ошибка при обновлении: {ex.Message}");
+                Console.WriteLine($" Ошибка при обновлении: {ex.Message}");
             }
 
             Console.WriteLine("Нажмите любую клавишу для продолжения...");
@@ -290,13 +297,13 @@ namespace ConsoleApp7
             {
                 foreach (var genreGroup in grouped)
                 {
-                    Console.WriteLine($"\n🎭 ЖАНР: {genreGroup.Key.ToUpper()}");
+                    Console.WriteLine($"\nЖАНР: {genreGroup.Key.ToUpper()}");
                     Console.WriteLine($"   Картин в жанре: {genreGroup.Value.Count}");
                     Console.WriteLine("   " + new string('═', 30));
 
                     foreach (var painting in genreGroup.Value)
                     {
-                        Console.WriteLine($"   🖼️  {painting.Title} - {painting.Artist} ({painting.Year})");
+                        Console.WriteLine($"{painting.Title} - {painting.Artist} ({painting.Year})");
                     }
                 }
             }
@@ -340,16 +347,16 @@ namespace ConsoleApp7
 
                 var paintings = logic.GetPaintingsByYearRange(startYear, endYear);
 
-                Console.WriteLine($"\n📊 Найдено картин с {startYear} по {endYear} год: {paintings.Count}");
+                Console.WriteLine($"\nНайдено картин с {startYear} по {endYear} год: {paintings.Count}");
 
                 if (paintings.Count > 0)
                 {
                     foreach (var painting in paintings)
                     {
-                        Console.WriteLine($"\n🎨 {painting.Title}");
-                        Console.WriteLine($"   👨‍🎨 {painting.Artist}");
-                        Console.WriteLine($"   📅 {painting.Year} год");
-                        Console.WriteLine($"   🏷️  {painting.Genre}");
+                        Console.WriteLine($"\n {painting.Title}");
+                        Console.WriteLine($" {painting.Artist}");
+                        Console.WriteLine($" {painting.Year} год");
+                        Console.WriteLine($" {painting.Genre}");
                     }
                 }
                 else
@@ -359,7 +366,7 @@ namespace ConsoleApp7
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ Ошибка при поиске: {ex.Message}");
+                Console.WriteLine($"Ошибка при поиске: {ex.Message}");
             }
 
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");

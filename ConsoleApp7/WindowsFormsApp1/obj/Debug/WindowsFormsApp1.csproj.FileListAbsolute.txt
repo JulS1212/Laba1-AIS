@@ -28,3 +28,4 @@ C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debu
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config

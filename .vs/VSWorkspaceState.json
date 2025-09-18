@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ConsoleApp7",
+    "\\ConsoleApp7\\ConsoleApp7",
     "\\ConsoleApp7\\WindowsFormsApp1"
   ],
-  "SelectedNode": "\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
+  "SelectedNode": "\\ConsoleApp7\\ConsoleApp7\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

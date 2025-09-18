@@ -20,14 +20,14 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             Logic = new Logic();
-            listBox1.Format += (sender, e) =>
+            listBox1.Format += (sender, e) => //подписка на событие которое возникает для каждого элемента и формирует красиивый вывод в listBox1
             {
                 if (e.ListItem is Painting painting)
                 {
                     e.Value = $"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}";
                 }
             };
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged; //подписка на событие
             RefreshList();
         }
 
@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(textBox1.Text) ||
+                if (string.IsNullOrWhiteSpace(textBox1.Text) || //проверка что не пустые
                     string.IsNullOrWhiteSpace(textBox2.Text) ||
                     string.IsNullOrWhiteSpace(textBox3.Text) ||
                     string.IsNullOrWhiteSpace(textBox4.Text))
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
 
                 if (int.TryParse(textBox3.Text, out int year))
                 {
-                    string title = textBox1.Text.Trim();
+                    string title = textBox1.Text.Trim(); //убираем пробелы
                     string artist = textBox2.Text.Trim();
                     string genre = textBox4.Text.Trim();
 
@@ -81,10 +81,10 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null)
+            if (listBox1.SelectedItem != null) //элемент выбран
             {
                 var painting = (Painting)listBox1.SelectedItem;
-                if (Logic.DeletePainting(painting.Title))
+                if (Logic.DeletePainting(painting.Title, painting.Artist))
                 {
                     RefreshList();
                     ClearFields();
@@ -123,6 +123,7 @@ namespace WindowsFormsApp1
                     // Выполняем обновление
                     bool success = Logic.UpdatePainting(
                         selectedPainting.Title, // старое название (для поиска)
+                        selectedPainting.Artist,
                         textBox1.Text,          // новое название
                         textBox2.Text,          // новый художник
                         year,                   // новый год
@@ -154,7 +155,7 @@ namespace WindowsFormsApp1
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //событие при выборе картины в списке
         {
             if (listBox1.SelectedItem != null && listBox1.SelectedItem is Painting)
             {

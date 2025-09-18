@@ -64,7 +64,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 1. Добавление новой картины (CREATE)
+        /// Добавление новой картины
         /// </summary>
         static void AddPainting()
         {
@@ -114,7 +114,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 2. Показать все картины (READ)
+        ///Показать все картины
         /// </summary>
         static void ShowAllPaintings()
         {
@@ -146,7 +146,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 3. Удаление картины (DELETE)
+        ///Удаление картины
         /// </summary>
         static void DeletePainting()
         {
@@ -206,7 +206,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 4. Изменение картины (UPDATE)
+        ///Изменение картины
         /// </summary>
         static void UpdatePainting()
         {
@@ -280,7 +280,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 5. Бизнес-функция: Группировка по жанрам
+        ///Группировка по жанрам
         /// </summary>
         static void GroupByGenre()
         {
@@ -313,7 +313,7 @@ namespace ConsoleApp7
         }
 
         /// <summary>
-        /// 6. Бизнес-функция: Поиск по диапазону лет
+        /// Поиск по диапазону лет
         /// </summary>
         static void SearchByYearRange()
         {

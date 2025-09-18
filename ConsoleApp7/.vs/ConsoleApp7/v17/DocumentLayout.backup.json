@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,14 +40,14 @@
               "RelativeDocumentMoniker": "ConsoleApp7\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\Program.cs",
               "RelativeToolTip": "ConsoleApp7\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAswDsBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T12:25:19.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
@@ -65,20 +65,20 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAIAwwFUAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAgwN4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T11:44:27.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Logic.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
               "RelativeDocumentMoniker": "BusinessLogical\\Logic.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
               "RelativeToolTip": "BusinessLogical\\Logic.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAswCYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T12:01:26.807Z",
               "EditorCaption": ""

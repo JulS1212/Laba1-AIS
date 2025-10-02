@@ -1,7 +1,8 @@
 ﻿using BusinessLogical;
+using Model;
 using System;
 using System.Collections.Generic;
-using Model;
+using System.IO;
 
 namespace ConsoleApp7
 {
@@ -11,7 +12,15 @@ namespace ConsoleApp7
 
         static void Main(string[] args)
         {
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //string currentDir = Environment.CurrentDirectory;
+            //Console.WriteLine($"Текущая папка: {currentDir}");
+            //Console.WriteLine($"Файл будет здесь: {Path.Combine(currentDir, "paintings.json")}");
+            //Console.WriteLine($"Файл существует: {File.Exists(Path.Combine(currentDir, "paintings.json"))}");
+
+            //// ДОБАВЬ ЭТУ СТРОКУ - чтобы увидеть сообщения до очистки экрана
+            //Console.WriteLine("Нажмите любую клавишу чтобы продолжить...");
+            //Console.ReadKey();
+
             Console.Title = "Управление коллекцией картин";
 
             // Главный цикл приложения
@@ -166,6 +175,13 @@ namespace ConsoleApp7
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(artist))
+            {
+                Console.WriteLine("Автор не может быть пустым!");
+                Console.ReadKey();
+                return;
+            }
+
             // Проверяем, существует ли картина
             var painting = logic.GetPainting(title,artist);
             if (painting == null)
@@ -222,6 +238,12 @@ namespace ConsoleApp7
             if (string.IsNullOrWhiteSpace(oldTitle))
             {
                 Console.WriteLine("Название не может быть пустым!");
+                Console.ReadKey();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(oldArtist))
+            {
+                Console.WriteLine("Автор не может быть пустым!");
                 Console.ReadKey();
                 return;
             }

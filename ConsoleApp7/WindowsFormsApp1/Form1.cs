@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 using Model;
 
@@ -16,21 +17,74 @@ namespace WindowsFormsApp1
     {
         public Logic Logic { get; set; }
         private Painting selectedPainting;
+        private FileSystemWatcher fileWatcher; // ← ДОБАВЬТЕ ЭТО ПОЛЕ
+        private string dataFilePath = "paintings.json";
         public Form1()
         {
             InitializeComponent();
             Logic = new Logic();
             listBox1.Format += (sender, e) => //подписка на событие которое возникает для каждого элемента и формирует красиивый вывод в listBox1
             {
-                if (e.ListItem is Painting painting)
+                if (e.ListItem is Painting painting)  // Проверяем, что элемент является объектом типа Painting
                 {
                     e.Value = $"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}";
                 }
             };
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged; //подписка на событие
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged; // 4. Подписка на событие изменения выбранного элемента
+
+            InitializeFileWatcher();
             RefreshList();
+            ClearFields();
         }
 
+        private void InitializeFileWatcher()
+        {
+            fileWatcher = new FileSystemWatcher();
+            fileWatcher.Path = Directory.GetCurrentDirectory();
+            fileWatcher.Filter = dataFilePath;
+            fileWatcher.NotifyFilter = NotifyFilters.LastWrite;
+
+            // Подписка на события
+            fileWatcher.Changed += OnDataFileChanged;
+            fileWatcher.EnableRaisingEvents = true;
+        }
+
+        /// <summary>
+        /// Обработчик изменения файла данных
+        /// </summary>
+        /// <summary>
+        /// Обработчик изменения файла данных
+        /// </summary>
+        private void OnDataFileChanged(object sender, FileSystemEventArgs e)
+        {
+            // ДОБАВЬ ЭТИ СТРОКИ ДЛЯ ОТЛАДКИ
+            Console.WriteLine($"Файл изменен: {e.FullPath}");
+            Console.WriteLine($"Тип изменения: {e.ChangeType}");
+
+            // Даем файлу время на разблокировку
+            System.Threading.Thread.Sleep(100);
+
+            // Вызываем обновление в UI потоке
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() =>
+                {
+                    Console.WriteLine("Обновляю список из WinForms...");
+                    RefreshList();
+                }));
+            }
+            else
+            {
+                Console.WriteLine("Обновляю список из WinForms...");
+                RefreshList();
+            }
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            fileWatcher?.Dispose();
+            base.OnFormClosed(e);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -83,7 +137,7 @@ namespace WindowsFormsApp1
         {
             if (listBox1.SelectedItem != null) //элемент выбран
             {
-                var painting = (Painting)listBox1.SelectedItem;
+                var painting = (Painting)listBox1.SelectedItem; //Пытается преобразовать object в конкретный тип Painting
                 if (Logic.DeletePainting(painting.Title, painting.Artist))
                 {
                     RefreshList();
@@ -190,7 +244,7 @@ namespace WindowsFormsApp1
 
         
 
-        private void listBoxPaintings_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBoxPaintings_SelectedIndexChanged(object sender, EventArgs e) //обработчик события изменения выбранного элемента в ListBox
         {
             if (listBox1.SelectedItem != null)
             {
@@ -204,9 +258,31 @@ namespace WindowsFormsApp1
 
         private void RefreshList()
         {
-            listBox1.DataSource = null;
-            listBox1.DataSource = Logic.GetAllPaintings();
-            listBox1.DisplayMember = null;
+            try
+            {
+                // ПЕРЕЗАГРУЖАЕМ данные из файла вместо использования данных из памяти
+                var paintings = Logic.GetAllPaintings();
+
+                if (listBox1.InvokeRequired)
+                {
+                    listBox1.Invoke(new Action(() =>
+                    {
+                        listBox1.DataSource = null;
+                        listBox1.DataSource = paintings;
+                        listBox1.DisplayMember = null;
+                    }));
+                }
+                else
+                {
+                    listBox1.DataSource = null;
+                    listBox1.DataSource = paintings;
+                    listBox1.DisplayMember = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка обновления списка: {ex.Message}");
+            }
         }
 
         private void ClearFields()
@@ -232,7 +308,7 @@ namespace WindowsFormsApp1
                 }
 
                 // Создаем строку с результатами
-                StringBuilder result = new StringBuilder();
+                StringBuilder result = new StringBuilder();//это класс в .NET для эффективного построения и модификации строк
                 result.AppendLine("=== КАРТИНЫ ПО ЖАНРАМ ===");
                 result.AppendLine();
 
@@ -256,6 +332,19 @@ namespace WindowsFormsApp1
                 MessageBox.Show($"Ошибка при группировке: {ex.Message}", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            RefreshList();
+            ClearFields();
+            MessageBox.Show("Список обновлен!");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ClearFields();
         }
     }
 }

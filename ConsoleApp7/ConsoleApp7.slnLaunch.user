@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "ConsoleApp7\\ConsoleApp7.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

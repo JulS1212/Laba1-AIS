@@ -3,12 +3,72 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Web.Script.Serialization;
+using System.Text;
 using Model;
 namespace BusinessLogical
 {
     public class Logic
     {
         List<Painting> Paintings = new List<Painting>();
+        //private readonly string dataFilePath = "paintings.json";
+        private readonly string dataFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "paintings.json");
+
+        public Logic()
+        {
+            LoadData();
+        }
+
+        /// <summary>
+        /// Сохраняет данные в файл
+        /// </summary>
+        private void SaveData()
+        {
+            try
+            {
+                var serializer = new JavaScriptSerializer();
+                string json = serializer.Serialize(Paintings);
+
+                // Используем FileShare.ReadWrite чтобы другие приложения могли читать файл
+                using (var fileStream = new FileStream(dataFilePath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
+                using (var writer = new StreamWriter(fileStream, Encoding.UTF8))
+                {
+                    writer.Write(json);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка сохранения данных: {ex.Message}");
+            }
+        }
+
+        /// <summary>
+        /// Загружает данные из файла
+        /// </summary>
+        private void LoadData()
+        {
+            try
+            {
+                if (File.Exists(dataFilePath))
+                {
+                    // Используем FileShare.ReadWrite
+                    using (var fileStream = new FileStream(dataFilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                    using (var reader = new StreamReader(fileStream, Encoding.UTF8))
+                    {
+                        string json = reader.ReadToEnd();
+                        var serializer = new JavaScriptSerializer();
+                        Paintings = serializer.Deserialize<List<Painting>>(json) ?? new List<Painting>();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка загрузки данных: {ex.Message}");
+                Paintings = new List<Painting>();
+            }
+        }
+
         /// <summary>
         /// Добавляет новую картину в коллекцию
         /// </summary>
@@ -26,6 +86,7 @@ namespace BusinessLogical
                 Genre = genre
             };
             Paintings.Add(painting);
+            SaveData();
         }
 
         /// <summary>
@@ -49,6 +110,7 @@ namespace BusinessLogical
         /// <returns>Объект Painting если найден, иначе null</returns>
         public Painting GetPainting(string title, string artist)
         {
+
             return Paintings.FirstOrDefault(p =>
                 p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) && p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
         }
@@ -65,6 +127,7 @@ namespace BusinessLogical
             if (painting != null)
             {
                 Paintings.Remove(painting);
+                SaveData();
                 return true;
             }
             return false;
@@ -76,6 +139,7 @@ namespace BusinessLogical
         /// <returns>Список всех объектов Painting</returns>
         public List<Painting> GetAllPaintings()
         {
+            LoadData();
             return new List<Painting>(Paintings);
         }
 
@@ -113,6 +177,7 @@ namespace BusinessLogical
                 painting.Artist = newArtist;
                 painting.Year = newYear;
                 painting.Genre = newGenre;
+                SaveData();
 
                 return true;
             }

@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DataAccessLayer;
 namespace BusinessLogical
 {
     public class Logic
     {
-        List<Painting> Paintings = new List<Painting>();
+        private readonly IRepository<Painting> _repository;
+        public Logic()
+        {
+            _repository = new DapperRepository<Painting>();
+        }
         /// <summary>
         /// Добавляет новую картину в коллекцию
         /// </summary>
@@ -25,7 +30,7 @@ namespace BusinessLogical
                 Year = year,
                 Genre = genre
             };
-            Paintings.Add(painting);
+            _repository.Add(painting);
         }
 
         /// <summary>
@@ -36,9 +41,9 @@ namespace BusinessLogical
         /// <returns>True если картина существует, иначе False</returns>
         public bool PaintingExists(string title, string artist)
         {
-            return Paintings.Any(p =>
-                p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
-                p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+            return _repository.ReadAll().Any(p =>
+            p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
+            p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
         }
 
         /// <summary>
@@ -49,8 +54,9 @@ namespace BusinessLogical
         /// <returns>Объект Painting если найден, иначе null</returns>
         public Painting GetPainting(string title, string artist)
         {
-            return Paintings.FirstOrDefault(p =>
-                p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) && p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+            return _repository.ReadAll().FirstOrDefault(p =>
+            p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
+            p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
         }
 
         /// <summary>
@@ -64,7 +70,7 @@ namespace BusinessLogical
             var painting = GetPainting(title, artist);
             if (painting != null)
             {
-                Paintings.Remove(painting);
+                _repository.Delete(painting.Id); ;
                 return true;
             }
             return false;
@@ -76,7 +82,7 @@ namespace BusinessLogical
         /// <returns>Список всех объектов Painting</returns>
         public List<Painting> GetAllPaintings()
         {
-            return new List<Painting>(Paintings);
+            return _repository.ReadAll().ToList();
         }
 
         /// <summary>
@@ -93,18 +99,14 @@ namespace BusinessLogical
         public bool UpdatePainting(string oldTitle, string oldArtist, string newTitle, string newArtist, int newYear, string newGenre)
         {
             // Ищем по названию И автору!
-            var painting = Paintings.FirstOrDefault(p =>
-                p.Title.Equals(oldTitle, StringComparison.OrdinalIgnoreCase) &&
-                p.Artist.Equals(oldArtist, StringComparison.OrdinalIgnoreCase));
+            var painting = GetPainting(oldTitle, oldArtist);
 
             if (painting != null)
             {
                 // Проверяем уникальность нового названия+автора
                 if ((!oldTitle.Equals(newTitle, StringComparison.OrdinalIgnoreCase) ||
                      !oldArtist.Equals(newArtist, StringComparison.OrdinalIgnoreCase)) &&
-                    Paintings.Any(p =>
-                        p.Title.Equals(newTitle, StringComparison.OrdinalIgnoreCase) &&
-                        p.Artist.Equals(newArtist, StringComparison.OrdinalIgnoreCase)))
+                   PaintingExists(newTitle, newArtist))
                 {
                     throw new ArgumentException("Картина с таким названием и автором уже существует!");
                 }
@@ -114,6 +116,7 @@ namespace BusinessLogical
                 painting.Year = newYear;
                 painting.Genre = newGenre;
 
+                _repository.Update(painting);
                 return true;
             }
             return false;
@@ -125,12 +128,12 @@ namespace BusinessLogical
         /// <returns>Словарь где ключ - жанр, значение - отсортированный список картин этого жанра</returns>
         public Dictionary<string, List<Painting>> GroupByGenre()
         {
-            if (Paintings == null || Paintings.Count == 0)
+            if (_repository.ReadAll() == null || !_repository.ReadAll().Any())
             {
                 return new Dictionary<string, List<Painting>>();
             }
 
-            return Paintings
+            return _repository.ReadAll()
                 .GroupBy(p => p.Genre)  // Группируем по жанру
                 .OrderBy(g => g.Key)     // Сортируем по названию жанра
                 .ToDictionary(g => g.Key, g => g.OrderBy(p => p.Title).ToList()); // Сортируем картины внутри жанра
@@ -144,7 +147,7 @@ namespace BusinessLogical
         /// <returns>Отсортированный список картин созданных в указанном диапазоне лет</returns>
         public List<Painting> GetPaintingsByYearRange(int startYear, int endYear)
         {
-            return Paintings
+            return _repository.ReadAll()
                 .Where(p => p.Year >= startYear && p.Year <= endYear)
                 .OrderBy(p => p.Year)
                 .ToList();
@@ -157,7 +160,7 @@ namespace BusinessLogical
         public List<string> GetAll()
         {
             List<string> result = new List<string>();
-            foreach (Painting painting in Paintings)
+            foreach (Painting painting in _repository.ReadAll())
             {
                 result.Add($"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}");
             }

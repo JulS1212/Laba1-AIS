@@ -1,46 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\",
+  "WorkspaceRootPath": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\entityframeworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityframeworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:BusinessLogical\\Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\yulia-pc\\laba1-ais\\consoleapp7\\dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\model\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9508A41A-0D58-44C6-9854-BC5C4803713C}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,140 +82,256 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DapperRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:58:29.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:56:49.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T11:43:18.766Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Logic.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
-              "RelativeDocumentMoniker": "BusinessLogical\\Logic.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
-              "RelativeToolTip": "BusinessLogical\\Logic.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAIAwwKIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T12:01:26.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAcwAYBAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T11:44:27.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DatabaseConfig.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DatabaseConfig.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
               "RelativeToolTip": "DataAccessLayer\\DatabaseConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T09:58:10.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Painting.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
-              "RelativeDocumentMoniker": "Model\\Painting.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
-              "RelativeToolTip": "Model\\Painting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:48:05.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IDomainObject.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
-              "RelativeDocumentMoniker": "Model\\IDomainObject.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
-              "RelativeToolTip": "Model\\IDomainObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:53:34.793Z",
+              "WhenOpened": "2025-10-16T09:22:33.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\packages.config",
+              "RelativeDocumentMoniker": "Model\\packages.config",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\packages.config",
+              "RelativeToolTip": "Model\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-16T08:35:32.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
+              "RelativeDocumentMoniker": "ConsoleApp7\\packages.config",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
+              "RelativeToolTip": "ConsoleApp7\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-16T09:17:50.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Program.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:34:11.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
               "RelativeToolTip": "DataAccessLayer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T09:45:36.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp7\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\Program.cs",
-              "RelativeToolTip": "ConsoleApp7\\Program.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwG0AAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EntityFrameworkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EntityFrameworkRepository.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\EntityFrameworkRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T12:25:19.353Z",
+              "WhenOpened": "2025-10-16T08:56:30.569Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logic.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
+              "RelativeDocumentMoniker": "BusinessLogical\\Logic.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Logic.cs",
+              "RelativeToolTip": "BusinessLogical\\Logic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T12:01:26.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DapperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:58:29.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
+              "RelativeDocumentMoniker": "ConsoleApp7\\App.config",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
+              "RelativeToolTip": "ConsoleApp7\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-16T09:17:51.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
+              "RelativeDocumentMoniker": "BusinessLogical\\App.config",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
+              "RelativeToolTip": "BusinessLogical\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-16T09:18:26.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T08:36:28.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
+              "RelativeDocumentMoniker": "DataAccessLayer\\App.config",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
+              "RelativeToolTip": "DataAccessLayer\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-16T08:15:43.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:56:49.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAcwAYBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:44:27.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Painting.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
+              "RelativeDocumentMoniker": "Model\\Painting.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
+              "RelativeToolTip": "Model\\Painting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:48:05.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDomainObject.cs",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
+              "RelativeDocumentMoniker": "Model\\IDomainObject.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
+              "RelativeToolTip": "Model\\IDomainObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:53:34.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\WindowsFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:43:18.766Z"
             }
           ]
         }

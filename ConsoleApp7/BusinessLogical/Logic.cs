@@ -12,7 +12,7 @@ namespace BusinessLogical
         private readonly IRepository<Painting> _repository;
         public Logic()
         {
-            _repository = new DapperRepository<Painting>();
+            _repository = new EntityFrameworkRepository<Painting>();
         }
         /// <summary>
         /// Добавляет новую картину в коллекцию

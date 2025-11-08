@@ -9,10 +9,10 @@ namespace BusinessLogical
 {
     public class Logic
     {
-        private readonly IRepository<Painting> _repository;
+        private readonly IRepository<Painting> _repository;//типо короче для работы с пэйтингами
         public Logic()
         {
-            _repository = new EntityFrameworkRepository<Painting>();
+            _repository = new DapperRepository<Painting>();
         }
         /// <summary>
         /// Добавляет новую картину в коллекцию
@@ -165,6 +165,15 @@ namespace BusinessLogical
                 result.Add($"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}");
             }
             return result;
+        }
+        public List<Painting> SortByTitleAscending()
+        {
+            return GetAllPaintings().OrderBy(p => p.Title).ToList();
+        }
+
+        public List<Painting> SortByTitleDescending()
+        {
+            return GetAllPaintings().OrderByDescending(p => p.Title).ToList();
         }
     }
 }

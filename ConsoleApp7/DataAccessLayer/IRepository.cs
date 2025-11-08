@@ -7,7 +7,8 @@ using Model;
 
 namespace DataAccessLayer
 {
-    public interface IRepository<T> where T : IDomainObject
+    public interface IRepository<T> where T : IDomainObject//тип крч интерфейсик репозиторий где типы имеют ограничение должны           
+                                                           //быть реализовывать айдоменчик
     {
         void Add(T item);
         void Delete(int id);
@@ -17,3 +18,4 @@ namespace DataAccessLayer
 
     }
 }
+//Репозиторий – класс, что инкапсулирует необходимую для доступа к источником данных логику. 

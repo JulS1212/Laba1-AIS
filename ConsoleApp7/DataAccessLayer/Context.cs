@@ -2,15 +2,16 @@
 using Model;
 
 namespace DataAccessLayer
-{
-    public class Context : DbContext
+{//посредник между бд и классами, описывающими данные
+    public class Context : DbContext//сеанс работы с бд в еф
     {
-        public Context() : base("ArtGallery")
+        public Context() : base("ArtGallery")//ищет крч в конфиге
         {
-            // ОТКЛЮЧАЕМ создание новой БД - используем существующую
-            Database.SetInitializer<Context>(null);
+
+            Database.SetInitializer<Context>(null);//отключает автоматическое создание другой бд
         }
 
-        public DbSet<Painting> Paintings { get; set; }
+        public DbSet<Painting> Paintings { get; set; }//таблица
     }
 }
+//Сопоставляет объекты Painting с записями в таблице Paintings

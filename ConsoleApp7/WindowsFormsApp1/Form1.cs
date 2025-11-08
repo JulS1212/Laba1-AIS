@@ -20,14 +20,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             Logic = new Logic();
-            listBox1.Format += (sender, e) => //подписка на событие которое возникает для каждого элемента и формирует красиивый вывод в listBox1
-            {
-                if (e.ListItem is Painting painting)
-                {
-                    e.Value = $"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}";
-                }
-            };
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged; //подписка на событие
+
+            // Новые подписки для кнопок сортировки
+            sort1.Click += sort1_Click;
+            sort2.Click += button8_Click;
+
             RefreshList();
         }
 
@@ -77,13 +74,13 @@ namespace WindowsFormsApp1
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null) //элемент выбран
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                var painting = (Painting)listBox1.SelectedItem;
+                var painting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
                 if (Logic.DeletePainting(painting.Title, painting.Artist))
                 {
                     RefreshList();
@@ -95,7 +92,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             // Проверяем, что картина выбрана в ListBox
-            if (listBox1.SelectedItem == null)
+            if (dataGridView1.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Сначала выберите картину из списка!", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -103,7 +100,7 @@ namespace WindowsFormsApp1
             }
 
             // Получаем выбранную картину непосредственно из ListBox
-            Painting selectedPainting = (Painting)listBox1.SelectedItem;
+            Painting selectedPainting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
 
             // Проверяем, что все поля заполнены
             if (string.IsNullOrWhiteSpace(textBox1.Text) ||
@@ -155,21 +152,15 @@ namespace WindowsFormsApp1
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //событие при выборе картины в списке
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null && listBox1.SelectedItem is Painting)
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                selectedPainting = (Painting)listBox1.SelectedItem;
-
-                // Заполняем текстовые поля данными выбранной картины
+                selectedPainting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
                 textBox1.Text = selectedPainting.Title;
                 textBox2.Text = selectedPainting.Artist;
                 textBox3.Text = selectedPainting.Year.ToString();
                 textBox4.Text = selectedPainting.Genre;
-            }
-            else
-            {
-                selectedPainting = null;
             }
         }
         private void button5_Click(object sender, EventArgs e)
@@ -190,23 +181,32 @@ namespace WindowsFormsApp1
 
         
 
-        private void listBoxPaintings_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItem != null)
-            {
-                selectedPainting = (Painting)listBox1.SelectedItem;
-                textBox1.Text = selectedPainting.Title;
-                textBox2.Text = selectedPainting.Artist;
-                textBox3.Text = selectedPainting.Year.ToString();
-                textBox4.Text = selectedPainting.Genre;
-            }
-        }
+        //private void listBoxPaintings_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    if (dataGridView1.SelectedRows.Count > 0)
+        //    {
+        //        selectedPainting = (Painting)dataGridView1.SelectedItem;
+        //        textBox1.Text = selectedPainting.Title;
+        //        textBox2.Text = selectedPainting.Artist;
+        //        textBox3.Text = selectedPainting.Year.ToString();
+        //        textBox4.Text = selectedPainting.Genre;
+        //    }
+        //}
 
         private void RefreshList()
         {
-            listBox1.DataSource = null;
-            listBox1.DataSource = Logic.GetAllPaintings();
-            listBox1.DisplayMember = null;
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Logic.GetAllPaintings();
+
+            // Опционально: настрой заголовки колонок
+            if (dataGridView1.Columns.Count > 0)
+            {
+                dataGridView1.Columns["Id"].Visible = false; // Скрыть ID если не нужен
+                dataGridView1.Columns["Title"].HeaderText = "Название";
+                dataGridView1.Columns["Artist"].HeaderText = "Автор";
+                dataGridView1.Columns["Year"].HeaderText = "Год";
+                dataGridView1.Columns["Genre"].HeaderText = "Жанр";
+            }
         }
 
         private void ClearFields()
@@ -217,7 +217,11 @@ namespace WindowsFormsApp1
             textBox4.Text = "";
             selectedPainting = null;
         }
+        // Сортировка по алфавиту (А-Я) - для buttonSort1
+       
 
+        // Сортировка в обратном алфавитном порядке (Я-А) - для buttonSort2
+      
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -261,6 +265,50 @@ namespace WindowsFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
             ClearFields();
+        }
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = Logic.SortByTitleDescending();
+                MessageBox.Show("Сортировка в обратном порядке выполнена", "Успех",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сортировке: {ex.Message}", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.ReadOnly = true;
+
+            RefreshList();
+
+        }
+
+        private void sort1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = Logic.SortByTitleAscending();
+                MessageBox.Show("Сортировка по алфавиту выполнена!", "Успех",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при сортировке: {ex.Message}", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

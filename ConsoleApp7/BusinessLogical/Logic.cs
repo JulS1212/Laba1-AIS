@@ -8,11 +8,11 @@ using DataAccessLayer;
 namespace BusinessLogical
 {
     public class Logic
-    {
-        private readonly IRepository<Painting> _repository;//типо короче для работы с пэйтингами
-        public Logic()
+    {   
+        private readonly IRepository<Painting> _repository;
+        public Logic(IRepository<Painting> repository) //DI внедрение зависимости от абстракции
         {
-            _repository = new DapperRepository<Painting>();
+            _repository = repository;
         }
         /// <summary>
         /// Добавляет новую картину в коллекцию

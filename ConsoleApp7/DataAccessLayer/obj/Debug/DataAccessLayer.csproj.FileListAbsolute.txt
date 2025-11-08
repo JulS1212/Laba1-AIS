@@ -43,3 +43,8 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\DataAccessLayer\obj\Debug\DataAcce.E67BD
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\Model.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\Model.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml

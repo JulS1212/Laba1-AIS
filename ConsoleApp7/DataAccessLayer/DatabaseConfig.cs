@@ -9,6 +9,6 @@ namespace DataAccessLayer
     public static class DatabaseConfig
     {
         public static string ConnectionString { get; } =
-            @"Server=(localdb)\MSSQLLocalDB;Database=ArtGallery;Trusted_Connection=true;";
+            @"Server=DESKTOP-PK8PRRL\SQLEXPRESS;Database=ArtGallery;Trusted_Connection=true;";
     }
 }

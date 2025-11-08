@@ -30,3 +30,17 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.xml
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\Model.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\Dapper.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\Dapper.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\Model\obj\Debug\Model.csproj.Up2Date

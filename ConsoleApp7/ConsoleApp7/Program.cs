@@ -1,17 +1,24 @@
 ﻿using BusinessLogical;
+using Model;
+using Ninject;
 using System;
 using System.Collections.Generic;
-using Model;
+
 
 namespace ConsoleApp7
 {
     internal class Program
     {
-        static Logic logic = new Logic();
+        static Logic logic; //теперь объявляем переменную
 
         static void Main(string[] args)
         {
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            IKernel ninjectKernel = new StandardKernel(new NinjectConfig());//создаем экземпляр с настройкми, которые прописали в NinjectConfig
+            logic = ninjectKernel.Get<Logic>();// через Ninject создаем Logic с зависимостями
+            // кратко как работает: 1.Ninject видит, что нам нужо создать Logic
+            // 2. Видит, что у Logic есть конструктор и ему нужно передать параметры
+            // 3. В NinjectConfig помнит настройки, поэтому созадет DapperRepository<Painting>
+            // 4. Создает Logic и передает ему DapperRepository, и присываивает нашей переменной выше
             Console.Title = "Управление коллекцией картин";
 
             // Главный цикл приложения

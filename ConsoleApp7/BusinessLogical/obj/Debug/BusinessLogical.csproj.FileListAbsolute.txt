@@ -53,3 +53,11 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramewor
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Model.dll.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.xml
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\BusinessLogical.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Ninject.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Model.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Ninject.xml

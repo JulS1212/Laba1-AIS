@@ -1,4 +1,6 @@
 ﻿using BusinessLogical;
+using Model;
+using Ninject;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Model;
 
 namespace WindowsFormsApp1
 {
@@ -19,7 +20,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            Logic = new Logic();
+            IKernel ninjectKernel = new StandardKernel(new NinjectConfig());
+            Logic = ninjectKernel.Get<Logic>(); // тоже самое что я прописала в ConsoleApp7.Program.cs
 
             // Новые подписки для кнопок сортировки
             sort1.Click += sort1_Click;

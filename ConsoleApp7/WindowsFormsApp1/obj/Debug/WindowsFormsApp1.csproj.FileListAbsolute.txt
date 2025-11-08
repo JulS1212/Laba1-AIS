@@ -73,3 +73,11 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\BusinessLogic
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Model.dll.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.xml
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Ninject.dll
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\BusinessLogical.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Model.dll.config
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Ninject.xml

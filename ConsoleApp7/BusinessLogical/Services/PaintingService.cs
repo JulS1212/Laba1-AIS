@@ -45,10 +45,9 @@ namespace BusinessLogical.Services
         /// <returns>True если картина существует, иначе False</returns>
         public bool PaintingExists(string title, string artist)
         {
-            return _repository.ReadAll().Any(p =>
-            p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
-            p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+            return _repository.PaintingExists(title, artist); // ← Вызов репозитория!
         }
+
 
         /// <summary>
         /// Получает картину из коллекции по названию и автору
@@ -56,12 +55,11 @@ namespace BusinessLogical.Services
         /// <param name="title">Название картины для поиска</param>
         /// <param name="artist">Автор картины для поиска</param>
         /// <returns>Объект Painting если найден, иначе null</returns>
-        public Painting GetPainting(string title, string artist)
+        public Painting GetPainting(string title, string artist) //возможно тупо, да, но это сделано для дальнейшего расширения или доп.валидации. вызывать Repository из UI нельзя
         {
-            return _repository.ReadAll().FirstOrDefault(p =>
-            p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
-            p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+            return _repository.GetPainting(title, artist); // ← Вызов репозитория!
         }
+
 
         /// <summary>
         /// Удаляет картину из коллекции по названию и автору
@@ -151,10 +149,9 @@ namespace BusinessLogical.Services
         /// <returns>Отсортированный список картин созданных в указанном диапазоне лет</returns>
         public List<Painting> GetPaintingsByYearRange(int startYear, int endYear)
         {
-            return _repository.ReadAll()
-                .Where(p => p.Year >= startYear && p.Year <= endYear)
-                .OrderBy(p => p.Year)
-                .ToList();
+            return _repository.GetByYearRange(startYear, endYear)
+            .OrderBy(p => p.Year)
+            .ToList();
         }
 
         /// <summary>

@@ -5,10 +5,9 @@ namespace DataAccessLayer
 {//посредник между бд и классами, описывающими данные
     public class Context : DbContext//сеанс работы с бд в еф
     {
-        public Context() : base("ArtGallery")//ищет крч в конфиге
+        public Context(string connectionString) : base(connectionString)
         {
-
-            Database.SetInitializer<Context>(null);//отключает автоматическое создание другой бд
+            Database.SetInitializer<Context>(null);
         }
 
         public DbSet<Painting> Paintings { get; set; }//таблица

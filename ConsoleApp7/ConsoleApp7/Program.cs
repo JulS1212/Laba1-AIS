@@ -1,27 +1,30 @@
 ﻿using BusinessLogical;
+using BusinessLogical.Interfaces;
 using Model;
 using Ninject;
 using System;
 using System.Collections.Generic;
+using BusinessLogical.Services;
 
 
 namespace ConsoleApp7
 {
     internal class Program
     {
-        static Logic logic; //теперь объявляем переменную
-
+        static IPaintingService paintingService;
+        static IPaintingValidator paintingValidator;
         static void Main(string[] args)
         {
             IKernel ninjectKernel = new StandardKernel(new NinjectConfig());//создаем экземпляр с настройкми, которые прописали в NinjectConfig
-            logic = ninjectKernel.Get<Logic>();// через Ninject создаем Logic с зависимостями
+            paintingService = ninjectKernel.Get<IPaintingService>();
+            paintingValidator = ninjectKernel.Get<IPaintingValidator>();
+            // через Ninject создаем Logic с зависимостями
             // кратко как работает: 1.Ninject видит, что нам нужо создать Logic
             // 2. Видит, что у Logic есть конструктор и ему нужно передать параметры
             // 3. В NinjectConfig помнит настройки, поэтому созадет DapperRepository<Painting>
             // 4. Создает Logic и передает ему DapperRepository, и присываивает нашей переменной выше
             Console.Title = "Управление коллекцией картин";
 
-            // Главный цикл приложения
             while (true)
             {
                 try
@@ -86,7 +89,7 @@ namespace ConsoleApp7
                 Console.Write("Автор: ");
                 string artist = Console.ReadLine();
                 // Проверяем, не существует ли уже такая картина
-                if (logic.GetPainting(title, artist) != null)
+                if (paintingService.GetPainting(title, artist) != null)
                 {
                     Console.WriteLine("Картина с таким названием уже существует!");
                     Console.ReadKey();
@@ -104,10 +107,15 @@ namespace ConsoleApp7
                 Console.Write("Жанр: ");
                 string genre = Console.ReadLine();
 
-                
+                string validationMessage = paintingValidator.ValidateWithMessage(title, artist, year, genre);
+                if (validationMessage != null)
+                {
+                    Console.WriteLine($"Ошибка валидации: {validationMessage}");
+                    Console.ReadKey();
+                    return;
+                }
 
-                // Добавляем картину через слой логики
-                logic.AddPainting(title, artist, year, genre);
+                paintingService.AddPainting(title, artist, year, genre);
 
                 Console.WriteLine("\nКартина успешно добавлена!");
             }
@@ -128,7 +136,7 @@ namespace ConsoleApp7
             Console.Clear();
             Console.WriteLine("=== ВСЕ КАРТИНЫ В КОЛЛЕКЦИИ ===");
 
-            var paintings = logic.GetAllPaintings();
+            var paintings = paintingService.GetAllPaintings();
 
             if (paintings.Count == 0)
             {
@@ -174,7 +182,7 @@ namespace ConsoleApp7
             }
 
             // Проверяем, существует ли картина
-            var painting = logic.GetPainting(title,artist);
+            var painting = paintingService.GetPainting(title,artist);
             if (painting == null)
             {
                 Console.WriteLine("Картина с таким названием не найдена!");
@@ -194,7 +202,7 @@ namespace ConsoleApp7
 
             if (confirmation.ToLower() == "д")
             {
-                if (logic.DeletePainting(title, artist))
+                if (paintingService.DeletePainting(title, artist))
                 {
                     Console.WriteLine(" Картина успешно удалена!");
                 }
@@ -234,7 +242,7 @@ namespace ConsoleApp7
             }
 
             // Проверяем, существует ли картина
-            var oldPainting = logic.GetPainting(oldTitle,oldArtist);
+            var oldPainting = paintingService.GetPainting(oldTitle,oldArtist);
             if (oldPainting == null)
             {
                 Console.WriteLine("Картина с таким названием не найдена!");
@@ -248,7 +256,7 @@ namespace ConsoleApp7
             Console.WriteLine($"Год: {oldPainting.Year}");
             Console.WriteLine($"Жанр: {oldPainting.Genre}");
 
-            Console.WriteLine("\nВведите новые данные (оставьте пустым, чтобы не менять):");
+            Console.WriteLine("\nВведите НОВЫЕ данные картины:");
 
             Console.Write("Новое название: ");
             string newTitle = Console.ReadLine();
@@ -268,7 +276,15 @@ namespace ConsoleApp7
 
             try
             {
-                if (logic.UpdatePainting(oldTitle, oldArtist, newTitle, newArtist, newYear, newGenre))
+                string validationMessage = paintingValidator.ValidateWithMessage(newTitle, newArtist, newYear, newGenre);
+                if (validationMessage != null)
+                {
+                    Console.WriteLine($"Ошибка валидации: {validationMessage}");
+                    Console.ReadKey();
+                    return;
+                }
+
+                if (paintingService.UpdatePainting(oldTitle, oldArtist, newTitle, newArtist, newYear, newGenre))
                 {
                     Console.WriteLine(" Картина успешно обновлена!");
                 }
@@ -294,7 +310,7 @@ namespace ConsoleApp7
             Console.Clear();
             Console.WriteLine("=== ГРУППИРОВКА КАРТИН ПО ЖАНРАМ ===");
 
-            var grouped = logic.GroupByGenre();
+            var grouped = paintingService.GroupByGenre();
 
             if (grouped.Count == 0)
             {
@@ -352,7 +368,7 @@ namespace ConsoleApp7
                     return;
                 }
 
-                var paintings = logic.GetPaintingsByYearRange(startYear, endYear);
+                var paintings = paintingService.GetPaintingsByYearRange(startYear, endYear);
 
                 Console.WriteLine($"\nНайдено картин с {startYear} по {endYear} год: {paintings.Count}");
 

@@ -1,19 +1,23 @@
-﻿using System;
+﻿using BusinessLogical.Interfaces;
+using DataAccessLayer;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Model;
-using DataAccessLayer;
-namespace BusinessLogical
+
+namespace BusinessLogical.Services
 {
-    public class Logic
-    {   
-        private readonly IRepository<Painting> _repository;
-        public Logic(IRepository<Painting> repository) //DI внедрение зависимости от абстракции
+    public class PaintingService : IPaintingService
+    {
+        private readonly IPaintingRepository _repository;
+
+        public PaintingService(IPaintingRepository repository)
         {
             _repository = repository;
         }
+
         /// <summary>
         /// Добавляет новую картину в коллекцию
         /// </summary>
@@ -98,7 +102,7 @@ namespace BusinessLogical
         /// <exception cref="ArgumentException">Выбрасывается если новая комбинация названия и автора уже существует</exception>
         public bool UpdatePainting(string oldTitle, string oldArtist, string newTitle, string newArtist, int newYear, string newGenre)
         {
-            // Ищем по названию И автору!
+            // Ищем по названию и автору
             var painting = GetPainting(oldTitle, oldArtist);
 
             if (painting != null)
@@ -175,5 +179,6 @@ namespace BusinessLogical
         {
             return GetAllPaintings().OrderByDescending(p => p.Title).ToList();
         }
+
     }
 }

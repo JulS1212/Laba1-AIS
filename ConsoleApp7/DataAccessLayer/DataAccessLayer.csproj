@@ -75,7 +75,9 @@
     <Compile Include="DapperRepository.cs" />
     <Compile Include="DatabaseConfig.cs" />
     <Compile Include="EntityFrameworkRepository.cs" />
+    <Compile Include="IPaintingRepository.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="PaintingRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

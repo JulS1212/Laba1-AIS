@@ -11,10 +11,10 @@ namespace DataAccessLayer
         private Context _context;//отвечает за подключение, отслеживание изменений, сохранение данных крч работа с бдшкой
         private DbSet<T> _dbSet;//сама бдшечка ну типо ее данные
 
-        public EntityFrameworkRepository()
+        public EntityFrameworkRepository(string connectionString)
         {
-            _context = new Context();//с бдшкой
-            _dbSet = _context.Set<T>();// Получаем доступ к таблице для типа T
+            _context = new Context(connectionString); // Передаем connectionString в Context
+            _dbSet = _context.Set<T>();
         }
 
         public void Add(T item)
@@ -52,10 +52,5 @@ namespace DataAccessLayer
                 _context.SaveChanges();
             }
         }
-
-        //public void Dispose()//очисточка
-        //{
-        //    _context?.Dispose(); 
-        //}
     }
 }

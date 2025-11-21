@@ -12,12 +12,12 @@ namespace ConsoleApp7
     internal class Program
     {
         static IPaintingService paintingService;
-        static IPaintingValidator paintingValidator;
+        //static IPaintingValidator paintingValidator;
         static void Main(string[] args)
         {
             IKernel ninjectKernel = new StandardKernel(new NinjectConfig());//создаем экземпляр с настройкми, которые прописали в NinjectConfig
             paintingService = ninjectKernel.Get<IPaintingService>();
-            paintingValidator = ninjectKernel.Get<IPaintingValidator>();
+            //paintingValidator = ninjectKernel.Get<IPaintingValidator>();
             // через Ninject создаем Logic с зависимостями
             // кратко как работает: 1.Ninject видит, что нам нужо создать Logic
             // 2. Видит, что у Logic есть конструктор и ему нужно передать параметры
@@ -83,23 +83,17 @@ namespace ConsoleApp7
 
             try
             {
+
                 Console.Write("Название картины: ");
                 string title = Console.ReadLine();
 
                 Console.Write("Автор: ");
                 string artist = Console.ReadLine();
-                // Проверяем, не существует ли уже такая картина
-                if (paintingService.GetPainting(title, artist) != null)
-                {
-                    Console.WriteLine("Картина с таким названием уже существует!");
-                    Console.ReadKey();
-                    return;
-                }
 
                 Console.Write("Год создания: ");
-                if (!int.TryParse(Console.ReadLine(), out int year) || year < 1000 || year > DateTime.Now.Year)
+                if (!int.TryParse(Console.ReadLine(), out int year))
                 {
-                    Console.WriteLine("Некорректный год! Должен быть между 1000 и текущим годом.");
+                    Console.WriteLine("Некорректный год!");
                     Console.ReadKey();
                     return;
                 }
@@ -107,21 +101,14 @@ namespace ConsoleApp7
                 Console.Write("Жанр: ");
                 string genre = Console.ReadLine();
 
-                string validationMessage = paintingValidator.ValidateWithMessage(title, artist, year, genre);
-                if (validationMessage != null)
-                {
-                    Console.WriteLine($"Ошибка валидации: {validationMessage}");
-                    Console.ReadKey();
-                    return;
-                }
-
                 paintingService.AddPainting(title, artist, year, genre);
 
                 Console.WriteLine("\nКартина успешно добавлена!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка при добавлении: {ex.Message}");
+                // Обрабатываем ВСЕ ошибки из сервиса
+                Console.WriteLine($"Ошибка: {ex.Message}");
             }
 
             Console.WriteLine("Нажмите любую клавишу для продолжения...");
@@ -228,74 +215,64 @@ namespace ConsoleApp7
             Console.Clear();
             Console.WriteLine("=== ИЗМЕНЕНИЕ КАРТИНЫ ===");
 
-            Console.Write("Введите название картины для изменения: ");
-            string oldTitle = Console.ReadLine();
-
-            Console.Write("Введите автора картины для изменения: ");
-            string oldArtist = Console.ReadLine();
-
-            if (string.IsNullOrWhiteSpace(oldTitle))
-            {
-                Console.WriteLine("Название не может быть пустым!");
-                Console.ReadKey();
-                return;
-            }
-
-            // Проверяем, существует ли картина
-            var oldPainting = paintingService.GetPainting(oldTitle,oldArtist);
-            if (oldPainting == null)
-            {
-                Console.WriteLine("Картина с таким названием не найдена!");
-                Console.ReadKey();
-                return;
-            }
-
-            Console.WriteLine("\nТекущие данные:");
-            Console.WriteLine($"Название: {oldPainting.Title}");
-            Console.WriteLine($"Автор: {oldPainting.Artist}");
-            Console.WriteLine($"Год: {oldPainting.Year}");
-            Console.WriteLine($"Жанр: {oldPainting.Genre}");
-
-            Console.WriteLine("\nВведите НОВЫЕ данные картины:");
-
-            Console.Write("Новое название: ");
-            string newTitle = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(newTitle)) newTitle = oldPainting.Title;
-
-            Console.Write("Новый автор: ");
-            string newArtist = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(newArtist)) newArtist = oldPainting.Artist;
-
-            Console.Write("Новый год: ");
-            string yearInput = Console.ReadLine();
-            int newYear = string.IsNullOrWhiteSpace(yearInput) ? oldPainting.Year : int.Parse(yearInput);
-
-            Console.Write("Новый жанр: ");
-            string newGenre = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(newGenre)) newGenre = oldPainting.Genre;
-
             try
             {
-                string validationMessage = paintingValidator.ValidateWithMessage(newTitle, newArtist, newYear, newGenre);
-                if (validationMessage != null)
+                // 1. Получаем данные для поиска
+                Console.Write("Введите название картины для изменения: ");
+                string oldTitle = Console.ReadLine();
+
+                Console.Write("Введите автора картины для изменения: ");
+                string oldArtist = Console.ReadLine();
+
+                // 2. Получаем текущую картину (для показа пользователю)
+                var oldPainting = paintingService.GetPainting(oldTitle, oldArtist);
+                if (oldPainting == null)
                 {
-                    Console.WriteLine($"Ошибка валидации: {validationMessage}");
+                    Console.WriteLine("Картина не найдена!");
                     Console.ReadKey();
                     return;
                 }
 
+                // 3. Показываем текущие данные
+                Console.WriteLine("\nТекущие данные:");
+                Console.WriteLine($"Название: {oldPainting.Title}");
+                Console.WriteLine($"Автор: {oldPainting.Artist}");
+                Console.WriteLine($"Год: {oldPainting.Year}");
+                Console.WriteLine($"Жанр: {oldPainting.Genre}");
+
+                // 4. Получаем новые данные
+                Console.WriteLine("\nВведите НОВЫЕ данные картины:");
+
+                Console.Write("Новое название: ");
+                string newTitle = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(newTitle)) newTitle = oldPainting.Title;
+
+                Console.Write("Новый автор: ");
+                string newArtist = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(newArtist)) newArtist = oldPainting.Artist;
+
+                Console.Write("Новый год: ");
+                string yearInput = Console.ReadLine();
+                int newYear = string.IsNullOrWhiteSpace(yearInput) ? oldPainting.Year : int.Parse(yearInput);
+
+                Console.Write("Новый жанр: ");
+                string newGenre = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(newGenre)) newGenre = oldPainting.Genre;
+
+                // 5. ⭐ ВСЯ логика теперь в сервисе - один вызов!
                 if (paintingService.UpdatePainting(oldTitle, oldArtist, newTitle, newArtist, newYear, newGenre))
                 {
-                    Console.WriteLine(" Картина успешно обновлена!");
+                    Console.WriteLine("Картина успешно обновлена!");
                 }
                 else
                 {
-                    Console.WriteLine(" Не удалось обновить картину!");
+                    Console.WriteLine("Картина не найдена!");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($" Ошибка при обновлении: {ex.Message}");
+                // 6. Обрабатываем ВСЕ ошибки из сервиса
+                Console.WriteLine($"Ошибка при обновлении: {ex.Message}");
             }
 
             Console.WriteLine("Нажмите любую клавишу для продолжения...");

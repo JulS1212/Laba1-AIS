@@ -12,10 +12,12 @@ namespace BusinessLogical.Services
     public class PaintingService : IPaintingService
     {
         private readonly IPaintingRepository _repository;
+        private readonly IPaintingValidator PaintingValidator;
 
-        public PaintingService(IPaintingRepository repository)
+        public PaintingService(IPaintingRepository repository, IPaintingValidator paintingValidator)
         {
             _repository = repository;
+            PaintingValidator = paintingValidator;
         }
 
         /// <summary>
@@ -27,6 +29,13 @@ namespace BusinessLogical.Services
         /// <param name="genre">Жанр картины</param>
         public void AddPainting(string title, string artist, int year, string genre)
         {
+            string validationMessage = PaintingValidator.ValidateWithMessage(title, artist, year, genre);
+            if (validationMessage != null)
+                throw new ArgumentException(validationMessage);
+
+            if (PaintingExists(title, artist))
+                throw new InvalidOperationException("Картина с таким названием и автором уже существует!");
+
             Painting painting = new Painting()
             {
                 Title = title,
@@ -45,7 +54,7 @@ namespace BusinessLogical.Services
         /// <returns>True если картина существует, иначе False</returns>
         public bool PaintingExists(string title, string artist)
         {
-            return _repository.GetPainting(title, artist) != null; // ← Вызов репозитория!
+            return _repository.GetPainting(title, artist) != null; 
         }
 
 
@@ -57,7 +66,7 @@ namespace BusinessLogical.Services
         /// <returns>Объект Painting если найден, иначе null</returns>
         public Painting GetPainting(string title, string artist) //возможно тупо, да, но это сделано для дальнейшего расширения или доп.валидации. вызывать Repository из UI нельзя
         {
-            return _repository.GetPainting(title, artist); // ← Вызов репозитория!
+            return _repository.GetPainting(title, artist); 
         }
 
 
@@ -100,6 +109,11 @@ namespace BusinessLogical.Services
         /// <exception cref="ArgumentException">Выбрасывается если новая комбинация названия и автора уже существует</exception>
         public bool UpdatePainting(string oldTitle, string oldArtist, string newTitle, string newArtist, int newYear, string newGenre)
         {
+            //ДОБАВИТЬ ВАЛИДАЦИЮ НОВЫХ ДАННЫХ
+            string validationMessage = PaintingValidator.ValidateWithMessage(newTitle, newArtist, newYear, newGenre);
+            if (validationMessage != null)
+                throw new ArgumentException(validationMessage);
+
             // Ищем по названию и автору
             var painting = GetPainting(oldTitle, oldArtist);
 
@@ -154,19 +168,7 @@ namespace BusinessLogical.Services
             .ToList();
         }
 
-        /// <summary>
-        /// Получает текстовое представление всех картин в коллекции
-        /// </summary>
-        /// <returns>Список строк в формате "Название - Автор (Год), Жанр"</returns>
-        //public List<string> GetAll()
-        //{
-        //    List<string> result = new List<string>();
-        //    foreach (Painting painting in _repository.ReadAll())
-        //    {
-        //        result.Add($"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}");
-        //    }
-        //    return result;
-        //}
+        
         public List<Painting> SortByTitleAscending()
         {
             return GetAllPaintings().OrderBy(p => p.Title).ToList();

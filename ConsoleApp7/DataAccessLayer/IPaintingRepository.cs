@@ -11,7 +11,7 @@ namespace DataAccessLayer
     {
         // ДОБАВЛЯЕМ методы, которые есть в Logic:
         IEnumerable<Painting> GetByYearRange(int startYear, int endYear);
-        bool PaintingExists(string title, string artist);
+        //bool PaintingExists(string title, string artist);
         Painting GetPainting(string title, string artist);
     }
 }

@@ -21,12 +21,12 @@ namespace DataAccessLayer
             _repository = repository;
         }
 
-        public bool PaintingExists(string title, string artist)
-        {
-            return _repository.ReadAll().Any(p =>
-                p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
-                p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
-        }
+        //public bool PaintingExists(string title, string artist)
+        //{
+        //    return _repository.ReadAll().Any(p =>
+        //        p.Title.Equals(title, StringComparison.OrdinalIgnoreCase) &&
+        //        p.Artist.Equals(artist, StringComparison.OrdinalIgnoreCase));
+        //}
 
         public Painting GetPainting(string title, string artist)
         {

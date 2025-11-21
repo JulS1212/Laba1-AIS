@@ -45,7 +45,7 @@ namespace BusinessLogical.Services
         /// <returns>True если картина существует, иначе False</returns>
         public bool PaintingExists(string title, string artist)
         {
-            return _repository.PaintingExists(title, artist); // ← Вызов репозитория!
+            return _repository.GetPainting(title, artist) != null; // ← Вызов репозитория!
         }
 
 
@@ -158,15 +158,15 @@ namespace BusinessLogical.Services
         /// Получает текстовое представление всех картин в коллекции
         /// </summary>
         /// <returns>Список строк в формате "Название - Автор (Год), Жанр"</returns>
-        public List<string> GetAll()
-        {
-            List<string> result = new List<string>();
-            foreach (Painting painting in _repository.ReadAll())
-            {
-                result.Add($"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}");
-            }
-            return result;
-        }
+        //public List<string> GetAll()
+        //{
+        //    List<string> result = new List<string>();
+        //    foreach (Painting painting in _repository.ReadAll())
+        //    {
+        //        result.Add($"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}");
+        //    }
+        //    return result;
+        //}
         public List<Painting> SortByTitleAscending()
         {
             return GetAllPaintings().OrderBy(p => p.Title).ToList();

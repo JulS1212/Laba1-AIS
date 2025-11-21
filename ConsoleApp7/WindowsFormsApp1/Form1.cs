@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             // Новые подписки для кнопок сортировки
             sort1.Click += sort1_Click;
             sort2.Click += button8_Click;
-
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             RefreshList();
         }
 

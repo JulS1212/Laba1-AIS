@@ -9,13 +9,13 @@ namespace BusinessLogical.Validators
 {
     public class PaintingValidator : IPaintingValidator
     {
-        public bool Validate(string title, string artist, int year, string genre)
-        {
-            return !string.IsNullOrWhiteSpace(title) &&
-                   !string.IsNullOrWhiteSpace(artist) &&
-                   year >= 1000 && year <= DateTime.Now.Year &&
-                   !string.IsNullOrWhiteSpace(genre);
-        }
+        //public bool Validate(string title, string artist, int year, string genre)
+        //{
+        //    return !string.IsNullOrWhiteSpace(title) &&
+        //           !string.IsNullOrWhiteSpace(artist) &&
+        //           year >= 1000 && year <= DateTime.Now.Year &&
+        //           !string.IsNullOrWhiteSpace(genre);
+        //}
 
         public string ValidateWithMessage(string title, string artist, int year, string genre)
         {

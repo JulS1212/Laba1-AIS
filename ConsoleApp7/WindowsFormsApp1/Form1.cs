@@ -1,7 +1,4 @@
-﻿using BusinessLogical;
-using BusinessLogical.Interfaces;
-using Model;
-using Ninject;
+﻿using Shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,172 +6,93 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using BusinessLogical.Services;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, IView
     {
-        public IPaintingService PaintingService { get; set; }
-        //public IPaintingValidator PaintingValidator { get; set; }
-        private Painting selectedPainting;
+        // 1. РЕАЛИЗУЕМ СОБЫТИЯ IView
+        public event Action FormLoaded;
+        public event Action<string, string, int, string> AddPaintingRequested;
+        public event Action<string, string> DeletePaintingRequested;
+        public event Action<string, string, string, string, int, string> UpdatePaintingRequested;
+        public event Action<int, int> SearchByYearRangeRequested;
+        public event Action GroupByGenreRequested;
+        public event Action SortByTitleAscendingRequested;
+        public event Action SortByTitleDescendingRequested;
+        public event Action ClearInputsRequested;
+        public event Action<PaintingDto> PaintingSelected;
+
+
         public Form1()
         {
             InitializeComponent();
-            IKernel ninjectKernel = new StandardKernel(new NinjectConfig());
-            PaintingService = ninjectKernel.Get<IPaintingService>();
-            //PaintingValidator = ninjectKernel.Get<IPaintingValidator>();
 
-            // Новые подписки для кнопок сортировки
-            sort1.Click += sort1_Click;
-            sort2.Click += button8_Click;
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.ReadOnly = true;
+
+            // 2. ПРИВЯЗКА СОБЫТИЙ UI К НАШИМ IView СОБЫТИЯМ
+            this.Load += (s, e) => FormLoaded?.Invoke();
+
+            // Кнопка "Добавить картину"
+            button1.Click += (s, e) =>
+            {
+                if (int.TryParse(textBox3.Text, out int year))
+                    AddPaintingRequested?.Invoke(textBox1.Text, textBox2.Text, year, textBox4.Text);
+            };
+
+            // Кнопка "Удалить картину"
+            button2.Click += (s, e) =>
+                DeletePaintingRequested?.Invoke(textBox1.Text, textBox2.Text);
+
+            // Кнопка "Изменить"
+            button3.Click += (s, e) =>
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    var selected = (PaintingDto)dataGridView1.SelectedRows[0].DataBoundItem;
+                    if (int.TryParse(textBox3.Text, out int newYear))
+                        UpdatePaintingRequested?.Invoke(selected.Title, selected.Artist,
+                                                       textBox1.Text, textBox2.Text,
+                                                       newYear, textBox4.Text);
+                }
+            };
+
+            // Кнопка "По жанрам"
+            button4.Click += (s, e) => GroupByGenreRequested?.Invoke();
+
+            // Кнопка "Найти" (по годам)
+            button5.Click += (s, e) =>
+            {
+                if (int.TryParse(textBox5.Text, out int startYear) &&
+                    int.TryParse(textBox6.Text, out int endYear))
+                    SearchByYearRangeRequested?.Invoke(startYear, endYear);
+            };
+
+            // Кнопка "Очистить"
+            button6.Click += (s, e) => ClearInputsRequested?.Invoke();
+
+            // Кнопки сортировки
+            sort1.Click += (s, e) => SortByTitleAscendingRequested?.Invoke();
+            sort2.Click += (s, e) => SortByTitleDescendingRequested?.Invoke();
+
+            // Выбор строки в таблице
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
-            RefreshList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
+        // 3. РЕАЛИЗУЕМ МЕТОДЫ IView
 
-                string title = textBox1.Text.Trim();
-                string artist = textBox2.Text.Trim();
-                string genre = textBox4.Text.Trim();
-
-                if (!int.TryParse(textBox3.Text, out int year))
-                {
-                    MessageBox.Show("Введите корректный год!", "Ошибка",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-
-                PaintingService.AddPainting(title, artist, year, genre);
-
-
-                RefreshList();
-                ClearFields();
-                MessageBox.Show("Картина добавлена!", "Успех",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                // 5. Обрабатываем ВСЕ возможные ошибки из сервиса
-                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                var painting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
-                if (PaintingService.DeletePainting(painting.Title, painting.Artist))
-                {
-                    RefreshList();
-                    ClearFields();
-                }
-            }
-        }
-
-        
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                selectedPainting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
-                textBox1.Text = selectedPainting.Title;
-                textBox2.Text = selectedPainting.Artist;
-                textBox3.Text = selectedPainting.Year.ToString();
-                textBox4.Text = selectedPainting.Genre;
-            }
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            // Бизнес-функция 2: Поиск по диапазону лет
-            if (int.TryParse(textBox5.Text, out int startYear) &&
-                int.TryParse(textBox6.Text, out int endYear))
-            {
-                var paintings = PaintingService.GetPaintingsByYearRange(startYear, endYear);
-                string result = $"Картины с {startYear} по {endYear} год:\n";
-                foreach (var painting in paintings)
-                {
-                    result += $"{painting.Title} - {painting.Artist} ({painting.Year}), {painting.Genre}\n";
-                }
-                MessageBox.Show(result);
-            }
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Сначала выберите картину из списка!", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            Painting selectedPainting = (Painting)dataGridView1.SelectedRows[0].DataBoundItem;
-
-            try
-            {
-                // 1. Получаем данные из полей
-                string newTitle = textBox1.Text.Trim();
-                string newArtist = textBox2.Text.Trim();
-                string newGenre = textBox4.Text.Trim();
-
-                // 2. Базовая проверка года (техническая)
-                if (!int.TryParse(textBox3.Text, out int newYear))
-                {
-                    MessageBox.Show("Введите корректный год!", "Ошибка",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // 3. ⭐ ВСЯ логика теперь в сервисе - один вызов!
-                bool success = PaintingService.UpdatePainting(
-                    selectedPainting.Title,
-                    selectedPainting.Artist,
-                    newTitle,
-                    newArtist,
-                    newYear,
-                    newGenre
-                );
-
-                if (success)
-                {
-                    RefreshList();
-                    ClearFields();
-                    MessageBox.Show("Картина успешно обновлена!", "Успех",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Картина не найдена!", "Ошибка",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                // 4. Обрабатываем ВСЕ ошибки валидации и бизнес-логики из сервиса
-                MessageBox.Show($"Ошибка при обновлении: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-        private void RefreshList()
+        public void DisplayPaintings(List<PaintingDto> paintings)
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = PaintingService.GetAllPaintings();
+            dataGridView1.DataSource = paintings;
 
-            // Опционально: настрой заголовки колонок
             if (dataGridView1.Columns.Count > 0)
             {
-                dataGridView1.Columns["Id"].Visible = false; // Скрыть ID если не нужен
+                dataGridView1.Columns["Id"].Visible = false;
                 dataGridView1.Columns["Title"].HeaderText = "Название";
                 dataGridView1.Columns["Artist"].HeaderText = "Автор";
                 dataGridView1.Columns["Year"].HeaderText = "Год";
@@ -182,106 +100,52 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void ClearFields()
+        public void ShowError(string message)
+        {
+            MessageBox.Show(message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message, "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void ClearInputs()
         {
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
-            selectedPainting = null;
+            textBox5.Text = "";
+            textBox6.Text = "";
         }
-        // Сортировка по алфавиту (А-Я) - для buttonSort1
-       
 
-        // Сортировка в обратном алфавитном порядке (Я-А) - для buttonSort2
-      
-        private void button4_Click(object sender, EventArgs e)
+        public void SetSelectedPainting(PaintingDto painting)
         {
-            try
-            {
-                var groupedPaintings = PaintingService.GroupByGenre();
-
-                if (groupedPaintings.Count == 0)
-                {
-                    MessageBox.Show("Нет картин для группировки!", "Информация",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
-                // Создаем строку с результатами
-                StringBuilder result = new StringBuilder();
-                result.AppendLine("=== КАРТИНЫ ПО ЖАНРАМ ===");
-                result.AppendLine();
-
-                foreach (var genreGroup in groupedPaintings)
-                {
-                    result.AppendLine($"{genreGroup.Key.ToUpper()} ({genreGroup.Value.Count} картин):");
-
-                    foreach (var painting in genreGroup.Value)
-                    {
-                        result.AppendLine($"   • {painting.Title} - {painting.Artist} ({painting.Year})");
-                    }
-                    result.AppendLine();
-                }
-
-                // Показываем результаты в MessageBox
-                MessageBox.Show(result.ToString(), "Группировка по жанрам",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при группировке: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            textBox1.Text = painting.Title;
+            textBox2.Text = painting.Artist;
+            textBox3.Text = painting.Year.ToString();
+            textBox4.Text = painting.Genre;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        // 4. ОБРАБОТЧИКИ СОБЫТИЙ UI (оставляем только те, что не покрыты событиями IView)
+
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            ClearFields();
-        }
-
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            try
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-                dataGridView1.DataSource = PaintingService.SortByTitleDescending();
-                MessageBox.Show("Сортировка в обратном порядке выполнена", "Успех",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при сортировке: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.MultiSelect = false;
-            dataGridView1.ReadOnly = true;
-
-            RefreshList();
-
-        }
-
-        private void sort1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                dataGridView1.DataSource = PaintingService.SortByTitleAscending();
-                MessageBox.Show("Сортировка по алфавиту выполнена!", "Успех",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при сортировке: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var paintingDto = (PaintingDto)dataGridView1.SelectedRows[0].DataBoundItem;
+                PaintingSelected?.Invoke(paintingDto); // ← "Пользователь выбрал эту картину"
             }
         }
+
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+        //    dataGridView1.AutoGenerateColumns = true;
+        //    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        //    dataGridView1.MultiSelect = false;
+        //    dataGridView1.ReadOnly = true;
+        //}
     }
 }

@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form, IView
     {
-        // 1. РЕАЛИЗУЕМ СОБЫТИЯ IView
+        // реализуем айвьюшку
         public event Action FormLoaded;
         public event Action<string, string, int, string> AddPaintingRequested;
         public event Action<string, string> DeletePaintingRequested;
@@ -34,21 +34,21 @@ namespace WindowsFormsApp1
             dataGridView1.MultiSelect = false;
             dataGridView1.ReadOnly = true;
 
-            // 2. ПРИВЯЗКА СОБЫТИЙ UI К НАШИМ IView СОБЫТИЯМ
+            // привязочка
             this.Load += (s, e) => FormLoaded?.Invoke();
 
-            // Кнопка "Добавить картину"
+            // событие для кнопочки добавить 
             button1.Click += (s, e) =>
             {
                 if (int.TryParse(textBox3.Text, out int year))
                     AddPaintingRequested?.Invoke(textBox1.Text, textBox2.Text, year, textBox4.Text);
             };
 
-            // Кнопка "Удалить картину"
+            // кнопка удалить
             button2.Click += (s, e) =>
                 DeletePaintingRequested?.Invoke(textBox1.Text, textBox2.Text);
 
-            // Кнопка "Изменить"
+            // кнопка изменить
             button3.Click += (s, e) =>
             {
                 if (dataGridView1.SelectedRows.Count > 0)
@@ -61,10 +61,10 @@ namespace WindowsFormsApp1
                 }
             };
 
-            // Кнопка "По жанрам"
+            // кнопка по жанрам
             button4.Click += (s, e) => GroupByGenreRequested?.Invoke();
 
-            // Кнопка "Найти" (по годам)
+            // кнопка найти по годам
             button5.Click += (s, e) =>
             {
                 if (int.TryParse(textBox5.Text, out int startYear) &&
@@ -72,18 +72,18 @@ namespace WindowsFormsApp1
                     SearchByYearRangeRequested?.Invoke(startYear, endYear);
             };
 
-            // Кнопка "Очистить"
+            // кнопка очистить
             button6.Click += (s, e) => ClearInputsRequested?.Invoke();
 
-            // Кнопки сортировки
+            // кнопки сортировки
             sort1.Click += (s, e) => SortByTitleAscendingRequested?.Invoke();
             sort2.Click += (s, e) => SortByTitleDescendingRequested?.Invoke();
 
-            // Выбор строки в таблице
+            // выбор строки в таблице
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
         }
 
-        // 3. РЕАЛИЗУЕМ МЕТОДЫ IView
+        // реализация методов из вью
 
         public void DisplayPaintings(List<PaintingDto> paintings)
         {
@@ -128,24 +128,15 @@ namespace WindowsFormsApp1
             textBox4.Text = painting.Genre;
         }
 
-        // 4. ОБРАБОТЧИКИ СОБЫТИЙ UI (оставляем только те, что не покрыты событиями IView)
-
-
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 var paintingDto = (PaintingDto)dataGridView1.SelectedRows[0].DataBoundItem;
-                PaintingSelected?.Invoke(paintingDto); // ← "Пользователь выбрал эту картину"
+                PaintingSelected?.Invoke(paintingDto); 
             }
         }
 
-        //private void Form1_Load(object sender, EventArgs e)
-        //{
-        //    dataGridView1.AutoGenerateColumns = true;
-        //    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-        //    dataGridView1.MultiSelect = false;
-        //    dataGridView1.ReadOnly = true;
-        //}
+        
     }
 }

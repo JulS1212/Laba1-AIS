@@ -49,13 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PaintingPresenter.cs" />
-    <Compile Include="Programs.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogical\BusinessLogical.csproj">
       <Project>{a56b747c-fd7c-49f7-9f08-296589223952}</Project>
       <Name>BusinessLogical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleApp7\ConsoleApp7.csproj">
+      <Project>{9ef2c3d9-c1fc-4c8a-9f5e-94d3f1a3163d}</Project>
+      <Name>ConsoleApp7</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{98a06b5c-ea26-48aa-b36b-d0de23da996a}</Project>

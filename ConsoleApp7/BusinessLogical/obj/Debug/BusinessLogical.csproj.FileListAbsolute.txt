@@ -61,3 +61,5 @@ C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.xml
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Ninject.xml
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Ninject.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\BusinessLogical\bin\Debug\Ninject.xml

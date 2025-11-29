@@ -8,15 +8,16 @@ namespace Shared
 {
     public interface IView
     {
-        event Action FormLoaded;                    // Когда форма загрузилась
-        event Action<string, string, int, string> AddPaintingRequested;     // Кнопка "Добавить картину"
-        event Action<string, string> DeletePaintingRequested;               // Кнопка "Удалить картину"  
-        event Action<string, string, string, string, int, string> UpdatePaintingRequested; // Кнопка "Изменить"
-        event Action<int, int> SearchByYearRangeRequested;                  // Кнопка "Найти" (по годам)
-        event Action GroupByGenreRequested;                                 // Кнопка "По жанрам"
-        event Action SortByTitleAscendingRequested;                         // Кнопка "В алфавитном"
-        event Action SortByTitleDescendingRequested;                        // Кнопка "В обратном алфавитном"
-        event Action ClearInputsRequested;                                  // Кнопка "Очистить"
+        event Action FormLoaded;                    // событие загрузкип формы,консоли
+                                                                            //событие при нажатии:
+        event Action<string, string, int, string> AddPaintingRequested;     // кнопочка добавки картины
+        event Action<string, string> DeletePaintingRequested;               // кнопка удаления картины 
+        event Action<string, string, string, string, int, string> UpdatePaintingRequested; // кнопка изменить
+        event Action<int, int> SearchByYearRangeRequested;                  // кнопка найти по году
+        event Action GroupByGenreRequested;                                 // кнопка по жанру сортировку
+        event Action SortByTitleAscendingRequested;                         // кнопка в алфавитном порядке сортировать
+        event Action SortByTitleDescendingRequested;                        // кнопка в обратном порядке сортировать
+        event Action ClearInputsRequested;                                  // кнопка очистки
         event Action<PaintingDto> PaintingSelected;
 
         void DisplayPaintings(List<PaintingDto> paintings);

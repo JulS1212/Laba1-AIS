@@ -17,7 +17,7 @@ namespace BusinessLogical
         
         public override void Load()
         {
-            string сonnectionString = @"Server=DESKTOP-PK8PRRL\SQLEXPRESS;Database=ArtGallery;Trusted_Connection=true;";
+            string сonnectionString = @"Server=(localdb)\MSSQLLocalDB;Database=ArtGallery;Trusted_Connection=true;";
 
             Bind<IRepository<Painting>>().To<DapperRepository<Painting>>().InSingletonScope().WithConstructorArgument("connectionString", сonnectionString); // настраиваем зависимость (типо Singlenot) IRepository = DapperRepository, т.е одно подключение к бд на весь проект
 

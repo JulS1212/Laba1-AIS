@@ -39,8 +39,6 @@ C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debu
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\BusinessLogical.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Dapper.dll
@@ -58,13 +56,11 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\System.Thread
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\DataAccessLayer.pdb
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\DataAccessLayer.dll.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
-C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
@@ -83,3 +79,10 @@ C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debu
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Shared.dll
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Shared.pdb
 C:\Users\User\Desktop\учеба\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Ninject.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Shared.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Shared.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Ninject.xml
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.dll.config
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.dll

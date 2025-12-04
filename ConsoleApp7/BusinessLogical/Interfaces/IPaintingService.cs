@@ -17,7 +17,7 @@ namespace BusinessLogical.Interfaces
         bool UpdatePainting(string oldTitle, string oldArtist, string newTitle, string newArtist, int newYear, string newGenre);
         Dictionary<string, List<Painting>> GroupByGenre();
         List<Painting> GetPaintingsByYearRange(int startYear, int endYear);
-        //List<string> GetAll();
+      
         List<Painting> SortByTitleAscending();
         List<Painting> SortByTitleDescending();
     }

@@ -86,3 +86,5 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Ninject.xml
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.dll.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Controller.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\WindowsFormsApp1\bin\Debug\Controller.pdb

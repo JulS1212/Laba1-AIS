@@ -112,9 +112,9 @@
       <Project>{a56b747c-fd7c-49f7-9f08-296589223952}</Project>
       <Name>BusinessLogical</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{98a06b5c-ea26-48aa-b36b-d0de23da996a}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{ac87d80d-3694-4968-b955-c428923c7e57}</Project>
+      <Name>Controller</Name>
     </ProjectReference>
     <ProjectReference Include="..\Shared\Shared.csproj">
       <Project>{33add336-eebc-49a1-a751-80f0278689f2}</Project>

@@ -25,6 +25,7 @@ namespace BusinessLogical
 
             Bind<IPaintingService>().To<PaintingService>();
             Bind<IPaintingValidator>().To<PaintingValidator>();
+            
         }
     }
 }

@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{33ADD336-EEBC-49A1-A751-80F0278689F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenter", "Presenter\Presenter.csproj", "{FA74C73A-D497-4F10-BA9F-589347EE3EB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Presenter\Starter.csproj", "{FA74C73A-D497-4F10-BA9F-589347EE3EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{AC87D80D-3694-4968-B955-C428923C7E57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{FA74C73A-D497-4F10-BA9F-589347EE3EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA74C73A-D497-4F10-BA9F-589347EE3EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA74C73A-D497-4F10-BA9F-589347EE3EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC87D80D-3694-4968-B955-C428923C7E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC87D80D-3694-4968-B955-C428923C7E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC87D80D-3694-4968-B955-C428923C7E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC87D80D-3694-4968-B955-C428923C7E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

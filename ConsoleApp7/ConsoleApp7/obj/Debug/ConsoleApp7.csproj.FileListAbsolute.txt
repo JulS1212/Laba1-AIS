@@ -58,3 +58,14 @@ C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\System.Threading.T
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.dll.config
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\ConsoleApp7.dll
 C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\obj\Debug\ConsoleApp7.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Controller.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Model.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\DataAccessLayer.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Controller.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\BusinessLogical.dll.config
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Model.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\Model.dll.config
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\DataAccessLayer.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\ConsoleApp7\bin\Debug\DataAccessLayer.dll.config

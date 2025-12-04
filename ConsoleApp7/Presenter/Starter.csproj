@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PaintingPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +59,10 @@
     <ProjectReference Include="..\ConsoleApp7\ConsoleApp7.csproj">
       <Project>{9ef2c3d9-c1fc-4c8a-9f5e-94d3f1a3163d}</Project>
       <Name>ConsoleApp7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{ac87d80d-3694-4968-b955-c428923c7e57}</Project>
+      <Name>Controller</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{98a06b5c-ea26-48aa-b36b-d0de23da996a}</Project>

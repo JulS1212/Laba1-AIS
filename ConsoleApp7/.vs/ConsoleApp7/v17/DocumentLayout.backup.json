@@ -1,102 +1,170 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\Presenter.csproj|c:\\users\\yulia-pc\\laba1-ais\\consoleapp7\\presenter\\paintingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\Presenter.csproj|solutionrelative:presenter\\paintingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\presenter\\mvvm\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|solutionrelative:presenter\\mvvm\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\interfaces\\ipaintingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\interfaces\\ipaintingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\presenter\\mvvm\\groupedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|solutionrelative:presenter\\mvvm\\groupedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\consolepaintingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\consolepaintingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\presenter\\mvvm\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|solutionrelative:presenter\\mvvm\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\interfaces\\ipaintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\interfaces\\ipaintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33ADD336-EEBC-49A1-A751-80F0278689F2}|Shared\\Shared.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\shared\\paintingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33ADD336-EEBC-49A1-A751-80F0278689F2}|Shared\\Shared.csproj|solutionrelative:shared\\paintingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\Presenter.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\Presenter.csproj|solutionrelative:presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\presenter\\mvvm\\viewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|solutionrelative:presenter\\mvvm\\viewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\presenter\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA74C73A-D497-4F10-BA9F-589347EE3EB4}|Presenter\\ViewModel_Presenter.csproj|solutionrelative:presenter\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\services\\paintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\services\\paintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\artgallery.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|c:\\users\\user\\desktop\\\u0443\u0447\u0435\u0431\u0430\\laba1-ais\\consoleapp7\\artgallery.wpf\\groupedview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\groupedview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\artgallery.wpf\\groupedview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\groupedview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\ninjectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\artgallery.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\artgallery.wpf\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\ninjectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\ninjectconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\artgallery.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6C2C6F78-B3DF-4A06-A7C5-F9A1CFB151F0}|ArtGallery.WPF\\ArtGallery.WPF.csproj|solutionrelative:artgallery.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\interfaces\\ipaintingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\interfaces\\ipaintingvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\consolepaintingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\consolepaintingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\interfaces\\ipaintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\interfaces\\ipaintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\painting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\services\\paintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\services\\paintingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98A06B5C-EA26-48AA-B36B-D0DE23DA996A}|Model\\Model.csproj|solutionrelative:model\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\consoleapp7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{9EF2C3D9-C1FC-4C8A-9F5E-94D3F1A3163D}|ConsoleApp7\\ConsoleApp7.csproj|solutionrelative:consoleapp7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\paintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\paintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\paintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\ipaintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\ipaintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ipaintingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\entityframeworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\entityframeworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityframeworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\businesslogical\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\businesslogical\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A56B747C-FD7C-49F7-9F08-296589223952}|BusinessLogical\\BusinessLogical.csproj|solutionrelative:businesslogical\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\dataaccesslayer\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229BDB27-2F63-4FE3-9743-9947DFAC915B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MainViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\MainViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\GroupedViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\GroupedViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\ViewManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\ViewManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\BaseViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\BaseViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\RelayCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\RelayCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\PaintingPresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\PaintingPresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Presenter\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,8 +174,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -129,25 +201,250 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaintingPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Presenter\\PaintingPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\PaintingPresenter.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Presenter\\PaintingPresenter.cs",
-              "RelativeToolTip": "Presenter\\PaintingPresenter.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\MVVM\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\MainViewModel.cs",
+              "RelativeToolTip": "Presenter\\MVVM\\MainViewModel.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAkwCYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T10:57:33.878Z",
+              "WhenOpened": "2025-12-04T02:45:01.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\MVVM\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\BaseViewModel.cs",
+              "RelativeToolTip": "Presenter\\MVVM\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:17:47.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GroupedViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\GroupedViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\MVVM\\GroupedViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\GroupedViewModel.cs",
+              "RelativeToolTip": "Presenter\\MVVM\\GroupedViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:44:53.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaintingDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Shared\\PaintingDto.cs",
+              "RelativeDocumentMoniker": "Shared\\PaintingDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Shared\\PaintingDto.cs",
+              "RelativeToolTip": "Shared\\PaintingDto.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:47:15.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\ViewManager.cs",
+              "RelativeDocumentMoniker": "Presenter\\MVVM\\ViewManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\ViewManager.cs",
+              "RelativeToolTip": "Presenter\\MVVM\\ViewManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:44:48.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Presenter\\MVVM\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MVVM\\RelayCommand.cs",
+              "RelativeToolTip": "Presenter\\MVVM\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T02:28:51.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\MainWindow.xaml",
+              "RelativeToolTip": "ArtGallery.WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-02T10:29:36.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GroupedViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\GroupedViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\GroupedViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\GroupedViewModel.cs",
+              "RelativeToolTip": "Presenter\\GroupedViewModel.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAuwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T12:10:10.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\MainViewModel.cs",
+              "RelativeToolTip": "Presenter\\MainViewModel.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAUwIUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T11:17:50.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GroupedView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\GroupedView.xaml.cs",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\GroupedView.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\GroupedView.xaml.cs",
+              "RelativeToolTip": "ArtGallery.WPF\\GroupedView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T13:08:07.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ArtGallery.WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:29:35.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\App.xaml.cs",
+              "RelativeToolTip": "ArtGallery.WPF\\App.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:39:55.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ViewManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\ViewManager.cs",
+              "RelativeDocumentMoniker": "Presenter\\ViewManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\ViewManager.cs",
+              "RelativeToolTip": "Presenter\\ViewManager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T12:30:48.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GroupedView.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\GroupedView.xaml",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\GroupedView.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\GroupedView.xaml",
+              "RelativeToolTip": "ArtGallery.WPF\\GroupedView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-02T12:14:34.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NinjectConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\NinjectConfig.cs",
+              "RelativeDocumentMoniker": "BusinessLogical\\NinjectConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\NinjectConfig.cs",
+              "RelativeToolTip": "BusinessLogical\\NinjectConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T12:44:21.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "Presenter\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\BaseViewModel.cs",
+              "RelativeToolTip": "Presenter\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:55:41.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Presenter\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\RelayCommand.cs",
+              "RelativeToolTip": "Presenter\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T10:58:35.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\App.xaml",
+              "RelativeDocumentMoniker": "ArtGallery.WPF\\App.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ArtGallery.WPF\\App.xaml",
+              "RelativeToolTip": "ArtGallery.WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-02T10:34:23.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PaintingPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\PaintingPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\PaintingPresenter.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\PaintingPresenter.cs",
+              "RelativeToolTip": "Presenter\\PaintingPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:57:33.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IPaintingValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingValidator.cs",
               "RelativeDocumentMoniker": "BusinessLogical\\Interfaces\\IPaintingValidator.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingValidator.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingValidator.cs",
               "RelativeToolTip": "BusinessLogical\\Interfaces\\IPaintingValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,11 +452,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "ConsolePaintingView.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\ConsolePaintingView.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\ConsolePaintingView.cs",
               "RelativeDocumentMoniker": "ConsoleApp7\\ConsolePaintingView.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\ConsolePaintingView.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\ConsolePaintingView.cs",
               "RelativeToolTip": "ConsoleApp7\\ConsolePaintingView.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAswEMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,11 +464,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "IPaintingService.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingService.cs",
               "RelativeDocumentMoniker": "BusinessLogical\\Interfaces\\IPaintingService.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Interfaces\\IPaintingService.cs",
               "RelativeToolTip": "BusinessLogical\\Interfaces\\IPaintingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +476,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Painting.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
               "RelativeDocumentMoniker": "Model\\Painting.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\Painting.cs",
               "RelativeToolTip": "Model\\Painting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,11 +488,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 40,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Presenter\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\Program.cs",
               "RelativeDocumentMoniker": "Presenter\\Program.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Presenter\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Presenter\\Program.cs",
               "RelativeToolTip": "Presenter\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAgwEIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,11 +500,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "PaintingService.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Services\\PaintingService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Services\\PaintingService.cs",
               "RelativeDocumentMoniker": "BusinessLogical\\Services\\PaintingService.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Services\\PaintingService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Services\\PaintingService.cs",
               "RelativeToolTip": "BusinessLogical\\Services\\PaintingService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -215,11 +512,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "IDomainObject.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
               "RelativeDocumentMoniker": "Model\\IDomainObject.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\Model\\IDomainObject.cs",
               "RelativeToolTip": "Model\\IDomainObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -227,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
               "RelativeDocumentMoniker": "ConsoleApp7\\packages.config",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\packages.config",
               "RelativeToolTip": "ConsoleApp7\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -239,23 +536,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NinjectConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\NinjectConfig.cs",
-              "RelativeDocumentMoniker": "BusinessLogical\\NinjectConfig.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\NinjectConfig.cs",
-              "RelativeToolTip": "BusinessLogical\\NinjectConfig.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T12:44:21.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
               "RelativeDocumentMoniker": "BusinessLogical\\App.config",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\App.config",
               "RelativeToolTip": "BusinessLogical\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -263,11 +548,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
               "RelativeDocumentMoniker": "ConsoleApp7\\App.config",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\ConsoleApp7\\App.config",
               "RelativeToolTip": "ConsoleApp7\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -275,11 +560,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -287,11 +572,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "PaintingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\PaintingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\PaintingRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\PaintingRepository.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\PaintingRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\PaintingRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\PaintingRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -299,11 +584,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "IPaintingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IPaintingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IPaintingRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IPaintingRepository.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IPaintingRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\IPaintingRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\IPaintingRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,11 +596,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "Context.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Context.cs",
               "RelativeToolTip": "DataAccessLayer\\Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -323,11 +608,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "DatabaseConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DatabaseConfig.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DatabaseConfig.cs",
               "RelativeToolTip": "DataAccessLayer\\DatabaseConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -335,11 +620,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "DapperRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\DapperRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,11 +632,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "EntityFrameworkRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\EntityFrameworkRepository.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\EntityFrameworkRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\EntityFrameworkRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -359,11 +644,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\packages.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\packages.config",
               "RelativeDocumentMoniker": "BusinessLogical\\packages.config",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\packages.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\packages.config",
               "RelativeToolTip": "BusinessLogical\\packages.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -371,11 +656,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "BusinessLogical\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\BusinessLogical\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "BusinessLogical\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,11 +668,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
               "RelativeDocumentMoniker": "DataAccessLayer\\App.config",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\App.config",
               "RelativeToolTip": "DataAccessLayer\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -395,11 +680,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Program.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Program.cs",
               "RelativeToolTip": "DataAccessLayer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -407,11 +692,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Yulia-PC\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\Laba1-AIS\\ConsoleApp7\\DataAccessLayer\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "DataAccessLayer\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

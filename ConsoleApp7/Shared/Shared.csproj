@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IView.cs" />
+    <Compile Include="MVP\IView.cs" />
     <Compile Include="PaintingDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

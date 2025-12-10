@@ -9,7 +9,8 @@ namespace Presenter
 {
     public class RelayCommand : ICommand
     {
-        private readonly Action _execute; // "Что делать?"
+        private readonly Action _execute; // что делать
+        private readonly Func<bool> _canExecute;  // можно ли выполнить
 
         public RelayCommand(Action execute)
         {
@@ -17,6 +18,7 @@ namespace Presenter
         }
 
         public bool CanExecute(object parameter) => true; //по умолчанию считаем что команду можно выполнить всегда
+        //public bool CanExecute(object parameter) => _canExecute?.Invoke() ?? true;  // Если проверка есть - используем
 
         public void Execute(object parameter) => _execute(); //просто вызываем сохраненный метод
 

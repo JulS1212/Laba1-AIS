@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace Presenter
 {
@@ -14,9 +15,9 @@ namespace Presenter
     {
         private readonly IPaintingService _paintingService;
 
-        // Коллекция групп (BindingList как в задании)
-        private BindingList<GenreGroup> _genreGroups;
-        public BindingList<GenreGroup> GenreGroups
+        // коллекция групп
+        private ObservableCollection<GenreGroup>  _genreGroups;
+        public ObservableCollection<GenreGroup> GenreGroups
         {
             get => _genreGroups;
             set
@@ -29,7 +30,7 @@ namespace Presenter
         public GroupedViewModel(IPaintingService paintingService)
         {
             _paintingService = paintingService ?? throw new ArgumentNullException(nameof(paintingService));
-            GenreGroups = new BindingList<GenreGroup>();
+            GenreGroups = new ObservableCollection<GenreGroup>();
             LoadGroups();
         }
 
@@ -44,7 +45,7 @@ namespace Presenter
                     var genreGroup = new GenreGroup
                     {
                         GenreName = group.Key,
-                        Paintings = new BindingList<PaintingDto>(
+                        Paintings = new ObservableCollection<PaintingDto>(
                             group.Value.Select(p => new PaintingDto
                             {
                                 Id = p.Id,
@@ -66,11 +67,11 @@ namespace Presenter
         }
     }
 
-    // Класс для представления группы
+    // класс для представления группы
     public class GenreGroup : INotifyPropertyChanged
     {
         private string _genreName;
-        private BindingList<PaintingDto> _paintings;
+        private ObservableCollection<PaintingDto> _paintings;
 
         public string GenreName
         {
@@ -82,7 +83,7 @@ namespace Presenter
             }
         }
 
-        public BindingList<PaintingDto> Paintings
+        public ObservableCollection<PaintingDto> Paintings
         {
             get => _paintings;
             set

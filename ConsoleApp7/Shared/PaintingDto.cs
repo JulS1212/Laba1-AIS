@@ -46,9 +46,9 @@ namespace Shared
             set { _genre = value; OnPropertyChanged(); }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;//WPF автоматически подписывается когда видит {Binding Title}
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) //WPF автоматически подписывается когда видит {Binding Title}
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) 
         {                                                                                       //virtual - можно переопределить в наследниках
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));          //[CallerMemberName] (атрибут) - set { _title = value; OnPropertyChanged(); } // Автоматически подставится "Title"
         }

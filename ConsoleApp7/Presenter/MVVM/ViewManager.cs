@@ -9,15 +9,13 @@ namespace Presenter
 {
     public class ViewManager
     {
-        // Словарь: тип ViewModel → тип View (окна)
+        // словарь, тип ViewModel - тип View 
         private readonly Dictionary<Type, Type> _viewModelToViewMap = new Dictionary<Type, Type>();
 
         /// <summary>
         /// Регистрирует связь между ViewModel и View
         /// </summary>
-        public void Register<TViewModel, TView>()
-            where TViewModel : BaseViewModel
-            where TView : Window
+        public void Register<TViewModel, TView>() where TViewModel : BaseViewModel where TView : Window
         {
             _viewModelToViewMap[typeof(TViewModel)] = typeof(TView);
         }
@@ -28,7 +26,7 @@ namespace Presenter
         public void Show(BaseViewModel viewModel)
         {
             var view = CreateViewForViewModel(viewModel);
-            view.DataContext = viewModel; // Разрешено по заданию
+            view.DataContext = viewModel;
             view.Show();
         }
 
@@ -38,7 +36,7 @@ namespace Presenter
         public bool? ShowDialog(BaseViewModel viewModel)
         {
             var view = CreateViewForViewModel(viewModel);
-            view.DataContext = viewModel; // Разрешено по заданию
+            view.DataContext = viewModel;
             return view.ShowDialog();
         }
 

@@ -11,53 +11,36 @@ using System.Windows;
 
 namespace ArtGallery.WPF
 {
-    /// <summary>
-    /// Логика взаимодействия для App.xaml
-    /// </summary>
-    public partial class App : Application
+    public partial class App : Application // точка входа, при запуски автоматически создается экзмепляр и вызывается OnStartup
     {
         private IKernel _container;
 
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            ConfigureContainer();
+            _container = new StandardKernel(new BusinessLogical.NinjectConfig());
             ComposeObjects();
         }
-
-        private void ConfigureContainer()
-        {
-            // Используем ту же конфигурацию Ninject
-            _container = new StandardKernel(new BusinessLogical.NinjectConfig());
-        }
-
-        // App.xaml.cs - метод ComposeObjects()
         private void ComposeObjects()
         {
             try
             {
-                System.Diagnostics.Debug.WriteLine("=== Настройка приложения ===");
 
-                // 1. СОЗДАЁМ ViewManager
+                // создаем ViewManager
                 var viewManager = new ViewManager();
-                System.Diagnostics.Debug.WriteLine("ViewManager создан");
 
-                // 2. РЕГИСТРИРУЕМ связки ViewModel → View
-                viewManager.Register<MainViewModel, MainWindow>();
+                // регистстрируем соотвествиее VM и V
+                viewManager.Register<MainViewModel, MainWindow>(); //если MainViewModel, то MainWindow
                 viewManager.Register<GroupedViewModel, GroupedView>();
-                System.Diagnostics.Debug.WriteLine("Связки зарегистрированы");
 
-                // 3. ПОЛУЧАЕМ сервис из Ninject
+                // получаем сервис
                 var paintingService = _container.Get<IPaintingService>();
-                System.Diagnostics.Debug.WriteLine($"Сервис получен: {paintingService != null}");
 
-                // 4. СОЗДАЁМ главную ViewModel (передаём viewManager!)
+                // создаем главную ViewModel (передаём viewManager!)
                 var mainViewModel = new MainViewModel(paintingService, viewManager);
-                System.Diagnostics.Debug.WriteLine($"MainViewModel создан: {mainViewModel != null}");
 
-                // 5. ПОКАЗЫВАЕМ главное окно через ViewManager
+                // показываем главное окно через ViewManager
                 viewManager.Show(mainViewModel);
-                System.Diagnostics.Debug.WriteLine("Главное окно показано");
             }
             catch (Exception ex)
             {

@@ -7,28 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Collections.ObjectModel;
 
 namespace Presenter
 {
     public class MainViewModel : BaseViewModel
     {
-        // Сервис бизнес-логики (получаем через Ninject)
         private readonly IPaintingService _paintingService;
         private readonly ViewManager _viewManager;
 
-        // 1. КОЛЛЕКЦИЯ ВСЕХ КАРТИН (для отображения в списке)
-        private BindingList<PaintingDto> _paintings;
-        public BindingList<PaintingDto> Paintings
-        {
-            get => _paintings;
-            set
-            {
-                _paintings = value;
-                OnPropertyChanged();
-            }
-        }
+        // коллекция всех картин, для отображения
+        private ObservableCollection<PaintingDto> _paintings;
+        public ObservableCollection<PaintingDto> Paintings { get => _paintings; set { _paintings = value; OnPropertyChanged(); } }
 
-        // 2. ВЫБРАННАЯ КАРТИНА В СПИСКЕ (при выборе заполняет форму)
+        // выбранная картина, заполняет форму при выборе
         private PaintingDto _selectedPainting;
         public PaintingDto SelectedPainting
         {
@@ -38,7 +30,7 @@ namespace Presenter
                 _selectedPainting = value;
                 OnPropertyChanged();
 
-                // Автоматически заполняем поля формы данными выбранной картины
+                // заполняем поля формы данными выбранной картины
                 if (value != null)
                 {
                     Title = value.Title;
@@ -49,9 +41,7 @@ namespace Presenter
             }
         }
 
-        // 3. СВОЙСТВА ДЛЯ ПОЛЕЙ ФОРМЫ (то, что пользователь вводит/видит)
-
-        // Название картины
+        // свойства полей формы, то что пользователь видит/вводит
         private string _title;
         public string Title
         {
@@ -63,7 +53,6 @@ namespace Presenter
             }
         }
 
-        // Автор картины
         private string _artist;
         public string Artist
         {
@@ -75,7 +64,6 @@ namespace Presenter
             }
         }
 
-        // Год создания
         private int _year;
         public int Year
         {
@@ -87,7 +75,6 @@ namespace Presenter
             }
         }
 
-        // Жанр
         private string _genre;
         public string Genre
         {
@@ -99,7 +86,6 @@ namespace Presenter
             }
         }
 
-        // Год ОТ для поиска
         private int _startYear;
         public int StartYear
         {
@@ -111,7 +97,6 @@ namespace Presenter
             }
         }
 
-        // Год ДО для поиска
         private int _endYear;
         public int EndYear
         {
@@ -123,7 +108,6 @@ namespace Presenter
             }
         }
 
-        // 4. КОМАНДЫ (вместо событий из IView)
         public ICommand LoadCommand { get; }
         public ICommand AddCommand { get; }
         public ICommand DeleteCommand { get; }
@@ -134,16 +118,15 @@ namespace Presenter
         public ICommand SortDescendingCommand { get; }
         public ICommand ClearCommand { get; }
 
-        // 5. КОНСТРУКТОР (зависимость через Ninject)
         public MainViewModel(IPaintingService paintingService, ViewManager viewManager)
         {
             _paintingService = paintingService ?? throw new ArgumentNullException(nameof(paintingService));
             _viewManager = viewManager ?? throw new ArgumentNullException(nameof(viewManager));
 
-            // Инициализируем коллекцию
-            Paintings = new BindingList<PaintingDto>();
+            // инициализируем коллекцию
+            Paintings = new ObservableCollection<PaintingDto>();
 
-            // Создаем команды и связываем с методами
+            // создаем команды и связываем с методами
             LoadCommand = new RelayCommand(LoadPaintings);
             AddCommand = new RelayCommand(AddPainting);
             DeleteCommand = new RelayCommand(DeletePainting);
@@ -154,12 +137,10 @@ namespace Presenter
             SortDescendingCommand = new RelayCommand(SortDescending);
             ClearCommand = new RelayCommand(ClearForm);
 
-            // Загружаем картины при старте
+            // загружаем картины при старте
             LoadPaintings();
 
         }
-
-        // 6. МЕТОДЫ-ОБРАБОТЧИКИ КОМАНД
 
         /// <summary>
         /// Загружает все картины из БД
@@ -169,7 +150,7 @@ namespace Presenter
             try
             {
                 var paintings = _paintingService.GetAllPaintings();
-                Paintings = new BindingList<PaintingDto>(
+                Paintings = new ObservableCollection<PaintingDto>(
                     paintings.Select(p => new PaintingDto
                     {
                         Id = p.Id,
@@ -179,10 +160,10 @@ namespace Presenter
                         Genre = p.Genre
                     }).ToList()
                 );
+                // ObservableCollection САМ подпишется на INPC всех элементов
             }
             catch (Exception ex)
             {
-                // В реальном приложении здесь будет вывод ошибки
                 System.Diagnostics.Debug.WriteLine($"Ошибка загрузки: {ex.Message}");
             }
         }
@@ -195,8 +176,26 @@ namespace Presenter
             try
             {
                 _paintingService.AddPainting(Title, Artist, Year, Genre);
+
+                var newPainting = _paintingService.GetPainting(Title, Artist);
+
+                if (newPainting != null)
+                {
+                    Paintings.Add(new PaintingDto
+                    {
+                        Id = newPainting.Id,
+                        Title = newPainting.Title,
+                        Artist = newPainting.Artist,
+                        Year = newPainting.Year,
+                        Genre = newPainting.Genre
+                    });
+                }
+
                 ClearForm();
-                LoadPaintings(); // Перезагружаем список
+            }
+            catch (InvalidOperationException ex) when (ex.Message.Contains("уже существует"))
+            {
+                System.Diagnostics.Debug.WriteLine("Картина уже существует!");
             }
             catch (Exception ex)
             {
@@ -213,10 +212,26 @@ namespace Presenter
 
             try
             {
-                if (_paintingService.DeletePainting(SelectedPainting.Title, SelectedPainting.Artist))
+                // сохраняем ссылку на удаляемый элемент
+                var paintingToDelete = SelectedPainting;
+
+                if (_paintingService.DeletePainting(
+                    paintingToDelete.Title,
+                    paintingToDelete.Artist))
                 {
+                    // находим DTO в коллекции
+                    var dtoToRemove = Paintings.FirstOrDefault(p =>
+                        p.Title == paintingToDelete.Title &&
+                        p.Artist == paintingToDelete.Artist);
+
+                    if (dtoToRemove != null)
+                    {
+                        Paintings.Remove(dtoToRemove);
+                        
+                    }
+
                     ClearForm();
-                    LoadPaintings(); // Перезагружаем список
+                    SelectedPainting = null;
                 }
             }
             catch (Exception ex)
@@ -234,16 +249,37 @@ namespace Presenter
 
             try
             {
+                // сохраняем старые значения для поиска в списке
+                var oldTitle = SelectedPainting.Title;
+                var oldArtist = SelectedPainting.Artist;
+
                 if (_paintingService.UpdatePainting(
-                    SelectedPainting.Title,
-                    SelectedPainting.Artist,
+                    oldTitle,
+                    oldArtist,
                     Title,
                     Artist,
                     Year,
                     Genre))
                 {
+                    // находим dto в коллекции
+                    var dtoToUpdate = Paintings.FirstOrDefault(p =>
+                        p.Title == oldTitle &&
+                        p.Artist == oldArtist);
+
+                    if (dtoToUpdate != null)
+                    {
+                        // обновляем только этот dto
+                        dtoToUpdate.Title = Title;
+                        dtoToUpdate.Artist = Artist;
+                        dtoToUpdate.Year = Year;
+                        dtoToUpdate.Genre = Genre;
+
+                        // INPC В PaintingDto СРАБОТАЕТ!
+                        // ObservableCollection УСЛЫШИТ И ОБНОВИТ ТОЛЬКО ЭТУ СТРОКУ В LISTVIEW
+                    }
+
                     ClearForm();
-                    LoadPaintings(); // Перезагружаем список
+                    SelectedPainting = null;
                 }
             }
             catch (Exception ex)
@@ -260,7 +296,7 @@ namespace Presenter
             try
             {
                 var paintings = _paintingService.GetPaintingsByYearRange(StartYear, EndYear);
-                Paintings = new BindingList<PaintingDto>(
+                Paintings = new ObservableCollection<PaintingDto>(
                     paintings.Select(p => new PaintingDto
                     {
                         Id = p.Id,
@@ -280,31 +316,18 @@ namespace Presenter
         /// <summary>
         /// Группирует картины по жанрам
         /// </summary>
-        // В MainViewModel.cs (метод GroupByGenre)
         private void GroupByGenre()
         {
             try
             {
-                // 1. СОЗДАЁМ ViewModel для окна группировки (ViewModel First!)
                 var groupedViewModel = new GroupedViewModel(_paintingService);
-
-                // 2. ПРОСИМ ViewManager показать эту ViewModel
-                // ViewManager сам найдёт, что GroupedViewModel → GroupedView
-                // Создаст окно, установит DataContext и покажет
                 _viewManager.ShowDialog(groupedViewModel);
 
-                // 3. (Опционально) После закрытия окна можно обновить главный список
-                // Например, если в окне группировки что-то изменили
-                // LoadPaintings();
             }
             catch (Exception ex)
             {
-                // В реальном приложении здесь будет вывод ошибки в UI
                 System.Diagnostics.Debug.WriteLine($"Ошибка открытия группировки: {ex.Message}");
 
-                // Если хочешь показать ошибку пользователю (но это не совсем по MVVM):
-                // MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", 
-                //                MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -316,7 +339,7 @@ namespace Presenter
             try
             {
                 var paintings = _paintingService.SortByTitleAscending();
-                Paintings = new BindingList<PaintingDto>(
+                Paintings = new ObservableCollection<PaintingDto>(
                     paintings.Select(p => new PaintingDto
                     {
                         Id = p.Id,
@@ -341,7 +364,7 @@ namespace Presenter
             try
             {
                 var paintings = _paintingService.SortByTitleDescending();
-                Paintings = new BindingList<PaintingDto>(
+                Paintings = new ObservableCollection<PaintingDto>(
                     paintings.Select(p => new PaintingDto
                     {
                         Id = p.Id,
@@ -369,7 +392,7 @@ namespace Presenter
             Genre = string.Empty;
             StartYear = 0;
             EndYear = 0;
-            SelectedPainting = null;
+            //SelectedPainting = null;
         }
 
     }

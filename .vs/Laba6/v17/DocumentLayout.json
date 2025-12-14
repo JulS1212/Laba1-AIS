@@ -1,0 +1,247 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Laba6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\decorator\\intramediateenglishserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\decorator\\intramediateenglishserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\models\\engineer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\models\\engineer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\models\\scientist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\models\\scientist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\strategy\\sberbankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\strategy\\sberbankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\strategy\\ibankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\strategy\\ibankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\strategy\\gazpromservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\strategy\\gazpromservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\decorator\\employeedecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\decorator\\employeedecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|c:\\users\\user\\source\\repos\\laba6\\laba6\\patterns\\decorator\\academicdegree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA15E6A9-84D9-411D-A2C6-4965FA9DB346}|Laba6\\Laba6.csproj|solutionrelative:laba6\\patterns\\decorator\\academicdegree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Laba6\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Employee.cs",
+              "RelativeToolTip": "Laba6\\Models\\Employee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:25:12.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IntramediateEnglishSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\IntramediateEnglishSerializer.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Decorator\\IntramediateEnglishSerializer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\IntramediateEnglishSerializer.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Decorator\\IntramediateEnglishSerializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:36:37.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Engineer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Engineer.cs",
+              "RelativeDocumentMoniker": "Laba6\\Models\\Engineer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Engineer.cs",
+              "RelativeToolTip": "Laba6\\Models\\Engineer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:42:13.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Program.cs",
+              "RelativeDocumentMoniker": "Laba6\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Program.cs",
+              "RelativeToolTip": "Laba6\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:23:37.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Scientist.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Scientist.cs",
+              "RelativeDocumentMoniker": "Laba6\\Models\\Scientist.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Scientist.cs",
+              "RelativeToolTip": "Laba6\\Models\\Scientist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:41:37.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SberbankService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\SberbankService.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Strategy\\SberbankService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\SberbankService.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Strategy\\SberbankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:39:34.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "Laba6\\Models\\Manager.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Models\\Manager.cs",
+              "RelativeToolTip": "Laba6\\Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:42:39.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBankService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\IBankService.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Strategy\\IBankService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\IBankService.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Strategy\\IBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:38:37.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GazpromService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\GazpromService.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Strategy\\GazpromService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Strategy\\GazpromService.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Strategy\\GazpromService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:40:33.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\EmployeeDecorator.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Decorator\\EmployeeDecorator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\EmployeeDecorator.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Decorator\\EmployeeDecorator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:29:44.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AcademicDegree.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\AcademicDegree.cs",
+              "RelativeDocumentMoniker": "Laba6\\Patterns\\Decorator\\AcademicDegree.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Laba6\\Laba6\\Patterns\\Decorator\\AcademicDegree.cs",
+              "RelativeToolTip": "Laba6\\Patterns\\Decorator\\AcademicDegree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:35:51.643Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

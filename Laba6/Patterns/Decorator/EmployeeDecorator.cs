@@ -8,7 +8,7 @@ namespace Laba6
 {
     public abstract class EmployeeDecorator : Employee
     {
-        protected Employee _employee;
+        public Employee _employee;
 
         public EmployeeDecorator(Employee employee)
             : base(employee.Name, employee.BaseSalary, employee.BankService)

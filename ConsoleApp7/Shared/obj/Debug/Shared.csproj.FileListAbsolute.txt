@@ -1,0 +1,6 @@
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\bin\Debug\Shared.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\bin\Debug\Shared.pdb
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\obj\Debug\Shared.dll
+C:\Users\Yulia-PC\Laba1-AIS\ConsoleApp7\Shared\obj\Debug\Shared.pdb

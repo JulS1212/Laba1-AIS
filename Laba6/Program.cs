@@ -25,7 +25,8 @@ namespace Laba6
                 Console.WriteLine("3. Добавить характеристику сотруднику");
                 Console.WriteLine("4. Изменить банковский сервис сотруднику");
                 Console.WriteLine("5. Удалить сотрудника");
-                Console.WriteLine("6. Выход");
+                Console.WriteLine("6. Удалить характеристику у сотрудника");
+                Console.WriteLine("7. Выход");
                 Console.WriteLine("=============================================");
                 Console.Write("Выберите действие: ");
 
@@ -49,6 +50,9 @@ namespace Laba6
                         DeleteEmployee();
                         break;
                     case "6":
+                        RemoveCharacteristic();
+                        break;
+                    case "7":
                         exit = true;
                         break;
                     default:
@@ -479,6 +483,135 @@ namespace Laba6
 
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");
             Console.ReadKey();
+        }
+        static void RemoveCharacteristic()
+        {
+            Console.Clear();
+            Console.WriteLine("========== УДАЛЕНИЕ ХАРАКТЕРИСТИКИ ==========");
+
+            if (employees.Count == 0)
+            {
+                Console.WriteLine("Сотрудников нет.");
+                Console.ReadKey();
+                return;
+            }
+
+            // Выбор сотрудника
+            Console.WriteLine("Выберите сотрудника:");
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine($"{i}. {employees[i].GetInfo()}");
+            }
+
+            int empIndex;
+            while (!int.TryParse(Console.ReadLine(), out empIndex) || empIndex < 0 || empIndex >= employees.Count)
+            {
+                Console.Write($"Введите число 0-{employees.Count - 1}: ");
+            }
+
+            var employee = employees[empIndex];
+
+            // Получаем все декораторы
+            var decorators = GetDecorators(employee);
+
+            if (decorators.Count == 0)
+            {
+                Console.WriteLine("У сотрудника нет характеристик.");
+                Console.ReadKey();
+                return;
+            }
+
+            // Выбор характеристики для удаления
+            Console.WriteLine("\nВыберите характеристику:");
+            for (int i = 0; i < decorators.Count; i++)
+            {
+                var decorator = decorators[i];
+                if (decorator is AcademicDegree)
+                    Console.WriteLine($"{i}. Учёная степень: {(decorator as AcademicDegree).ScienceArea}");
+                else if (decorator is IntramediateEnglishSerializer)
+                    Console.WriteLine($"{i}. Английский: {(decorator as IntramediateEnglishSerializer).ExaminationTitle}");
+            }
+
+            int charIndex;
+            while (!int.TryParse(Console.ReadLine(), out charIndex) || charIndex < 0 || charIndex >= decorators.Count)
+            {
+                Console.Write($"Введите число 0-{decorators.Count - 1}: ");
+            }
+
+            // Удаляем характеристику
+            decorators.RemoveAt(charIndex);
+
+            // Воссоздаём сотрудника
+            var baseEmployee = GetBaseEmployee(employee);
+            var newEmployee = baseEmployee;
+
+            // Добавляем оставшиеся декораторы
+            for (int i = decorators.Count - 1; i >= 0; i--)
+            {
+                newEmployee = ApplyDecorator(newEmployee, decorators[i]);
+            }
+
+            employees[empIndex] = newEmployee;
+            Console.WriteLine($"\nХарактеристика удалена! Новые данные: {newEmployee.GetInfo()}");
+            Console.ReadKey();
+        }
+
+        // Получаем все декораторы сотрудника
+        private static List<EmployeeDecorator> GetDecorators(Employee employee)
+        {
+            var decorators = new List<EmployeeDecorator>();
+
+            EmployeeDecorator current = employee as EmployeeDecorator;
+
+            while (current != null)
+            {
+                if (current is AcademicDegree || current is IntramediateEnglishSerializer)
+                    decorators.Add(current);
+
+                if (current._employee is EmployeeDecorator)
+                    current = current._employee as EmployeeDecorator;
+                else
+                    break;
+            }
+
+            return decorators;
+        }
+
+        // Получаем базового сотрудника
+        private static Employee GetBaseEmployee(Employee employee)
+        {
+            Employee current = employee;
+
+            while (current is EmployeeDecorator)
+            {
+                EmployeeDecorator decorator = current as EmployeeDecorator;
+                current = decorator._employee;
+            }
+
+            // Создаём нового базового сотрудника
+            if (current is Scientist)
+                return new Scientist(current.Name, current.BaseSalary, current.BankService);
+            else if (current is Engineer)
+                return new Engineer(current.Name, current.BaseSalary, current.BankService);
+            else // Manager
+                return new Manager(current.Name, current.BaseSalary, current.BankService);
+        }
+
+        // Применяем декоратор к сотруднику
+        private static Employee ApplyDecorator(Employee employee, EmployeeDecorator decorator)
+        {
+            if (decorator is AcademicDegree)
+            {
+                AcademicDegree degree = decorator as AcademicDegree;
+                return new AcademicDegree(employee, degree.DissertationTitle, degree.Year, degree.ScienceArea);
+            }
+            else if (decorator is IntramediateEnglishSerializer)
+            {
+                IntramediateEnglishSerializer english = decorator as IntramediateEnglishSerializer;
+                return new IntramediateEnglishSerializer(employee, english.ExaminationTitle, english.YearOfSertificate);
+            }
+
+            return employee;
         }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Patterns\Decorator\AcademicDegree.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Patterns\Decorator\AlcoholicDecorator.cs" />
     <Compile Include="Patterns\Decorator\EmployeeDecorator.cs" />
     <Compile Include="Models\Engineer.cs" />
     <Compile Include="Patterns\Strategy\GazpromService.cs" />

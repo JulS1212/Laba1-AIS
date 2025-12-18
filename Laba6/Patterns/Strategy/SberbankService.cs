@@ -10,7 +10,7 @@ namespace Laba6
     {
         public double CalculateSalary(double baseSalary)
         {
-            return baseSalary * 0.99; // Комиссия 1%
+            return baseSalary * 0.99;
         }
 
         public string GetServiceName()

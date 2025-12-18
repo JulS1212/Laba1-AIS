@@ -10,10 +10,9 @@ namespace Laba6
     {
         public Employee _employee;
 
-        public EmployeeDecorator(Employee employee)
-            : base(employee.Name, employee.BaseSalary, employee.BankService)
+        public EmployeeDecorator(Employee employee): base(employee?.Name ?? "", employee?.BaseSalary ?? 0,employee?.BankService)
         {
-            _employee = employee;
+            _employee = employee ?? throw new ArgumentNullException(nameof(employee));
         }
 
         public override abstract string GetInfo();
@@ -21,6 +20,10 @@ namespace Laba6
         public override double CalculateSalary()
         {
             return _employee.CalculateSalary();
+        }
+        public override double GetCreditApprovalProbability()
+        {
+            return _employee.GetCreditApprovalProbability();
         }
     }
 }

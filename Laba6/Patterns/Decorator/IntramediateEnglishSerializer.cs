@@ -11,8 +11,7 @@ namespace Laba6
         public string ExaminationTitle { get; set; }
         public int YearOfSertificate { get; set; }
 
-        public IntramediateEnglishSerializer(Employee employee, string examinationTitle, int yearOfSertificate)
-            : base(employee)
+        public IntramediateEnglishSerializer(Employee employee, string examinationTitle, int yearOfSertificate): base(employee)
         {
             ExaminationTitle = examinationTitle;
             YearOfSertificate = yearOfSertificate;

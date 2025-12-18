@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Laba6.Patterns.Decorator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -171,7 +172,6 @@ namespace Laba6
                     Console.WriteLine($"Зарплата после комиссии: {emp.CalculateSalary():F2}");
                 }
             }
-
             Console.WriteLine("\nНажмите любую клавишу для продолжения...");
             Console.ReadKey();
         }
@@ -217,17 +217,18 @@ namespace Laba6
                 Console.WriteLine("\nВыберите характеристику:");
                 Console.WriteLine("1. Учёная степень");
                 Console.WriteLine("2. Знание английского (Intermediate)");
-                Console.Write("Ваш выбор (1 или 2): ");
+                Console.WriteLine("3. Алкоголизм (снижает вероятность кредита)");
+                Console.Write("Ваш выбор (1,2 или 3): ");
 
                 choice = Console.ReadLine();
 
-                if (choice == "1" || choice == "2")
+                if (choice == "1" || choice == "2" || choice == "3")
                 {
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("Ошибка! Введите 1 или 2.");
+                    Console.WriteLine("Ошибка! Введите 1,2 или 3.");
                 }
             }
 
@@ -285,6 +286,14 @@ namespace Laba6
                     employees[empIndex] = employeeWithEnglish;
                     Console.WriteLine($"\nЗнание английского успешно добавлено!");
                     Console.WriteLine($"Новая информация: {employeeWithEnglish.GetInfo()}");
+                    break;
+
+                case "3": // НОВОЕ: Алкоголизм
+                    var alcoholicEmployee = new AlcoholicDecorator(employeeToDecorate);
+                    employees[empIndex] = alcoholicEmployee;
+
+                    Console.WriteLine($"\nАлкоголизм успешно добавлен!");
+                    Console.WriteLine($"Новая информация: {alcoholicEmployee.GetInfo()}");
                     break;
             }
 
@@ -356,19 +365,12 @@ namespace Laba6
 
             if (oldEmployee is EmployeeDecorator decorator)
             {
-                // Разбираем цепочку декораторов
-                var decorators = new List<EmployeeDecorator>();
-                Employee current = decorator;
 
-                // Собираем все декораторы
-                while (current is EmployeeDecorator currentDecorator)
-                {
-                    decorators.Add(currentDecorator);
-                    current = currentDecorator._employee; // Теперь это работает!
-                }
+                // Получаем все декораторы 
+                var decorators = GetDecorators(oldEmployee);
 
-                // Базовый сотрудник (последний в цепочке)
-                var baseEmployee = current;
+                // Получаем базового сотрудника (уже есть метод GetBaseEmployee!)
+                var baseEmployee = GetBaseEmployee(oldEmployee);
 
                 // Создаем нового базового сотрудника с новым банком
                 Employee newBaseEmployee;
@@ -385,14 +387,7 @@ namespace Laba6
                 newEmployee = newBaseEmployee;
                 for (int i = decorators.Count - 1; i >= 0; i--)
                 {
-                    if (decorators[i] is AcademicDegree degree)
-                    {
-                        newEmployee = new AcademicDegree(newEmployee, degree.DissertationTitle, degree.Year, degree.ScienceArea);
-                    }
-                    else if (decorators[i] is IntramediateEnglishSerializer english)
-                    {
-                        newEmployee = new IntramediateEnglishSerializer(newEmployee, english.ExaminationTitle, english.YearOfSertificate);
-                    }
+                    newEmployee = ApplyDecorator(newEmployee, decorators[i]);
                 }
             }
             else
@@ -530,6 +525,8 @@ namespace Laba6
                     Console.WriteLine($"{i}. Учёная степень: {(decorator as AcademicDegree).ScienceArea}");
                 else if (decorator is IntramediateEnglishSerializer)
                     Console.WriteLine($"{i}. Английский: {(decorator as IntramediateEnglishSerializer).ExaminationTitle}");
+                else if (decorator is AlcoholicDecorator) // НОВОЕ
+                    Console.WriteLine($"{i}. Алкоголизм (снижает вероятность кредита)");
             }
 
             int charIndex;
@@ -556,17 +553,14 @@ namespace Laba6
             Console.ReadKey();
         }
 
-        // Получаем все декораторы сотрудника
-        private static List<EmployeeDecorator> GetDecorators(Employee employee)
+        private static List<EmployeeDecorator> GetDecorators(Employee employee)//все декораторы крч тут
         {
             var decorators = new List<EmployeeDecorator>();
-
             EmployeeDecorator current = employee as EmployeeDecorator;
 
             while (current != null)
             {
-                if (current is AcademicDegree || current is IntramediateEnglishSerializer)
-                    decorators.Add(current);
+                decorators.Add(current); 
 
                 if (current._employee is EmployeeDecorator)
                     current = current._employee as EmployeeDecorator;
@@ -577,14 +571,13 @@ namespace Laba6
             return decorators;
         }
 
-        // Получаем базового сотрудника
+        // без характеристик челик
         private static Employee GetBaseEmployee(Employee employee)
         {
             Employee current = employee;
 
-            while (current is EmployeeDecorator)
+            while (current is EmployeeDecorator decorator)
             {
-                EmployeeDecorator decorator = current as EmployeeDecorator;
                 current = decorator._employee;
             }
 
@@ -597,20 +590,21 @@ namespace Laba6
                 return new Manager(current.Name, current.BaseSalary, current.BankService);
         }
 
-        // Применяем декоратор к сотруднику
+        //ну тут уже добавляем декоратор
         private static Employee ApplyDecorator(Employee employee, EmployeeDecorator decorator)
         {
-            if (decorator is AcademicDegree)
+            if (decorator is AcademicDegree degree)
             {
-                AcademicDegree degree = decorator as AcademicDegree;
                 return new AcademicDegree(employee, degree.DissertationTitle, degree.Year, degree.ScienceArea);
             }
-            else if (decorator is IntramediateEnglishSerializer)
+            else if (decorator is IntramediateEnglishSerializer english)
             {
-                IntramediateEnglishSerializer english = decorator as IntramediateEnglishSerializer;
                 return new IntramediateEnglishSerializer(employee, english.ExaminationTitle, english.YearOfSertificate);
             }
-
+            else if (decorator is AlcoholicDecorator) // НОВОЕ
+            {
+                return new AlcoholicDecorator(employee);
+            }
             return employee;
         }
     }

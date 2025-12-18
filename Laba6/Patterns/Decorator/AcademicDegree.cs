@@ -12,8 +12,7 @@ namespace Laba6
         public int Year { get; set; }
         public string ScienceArea { get; set; }
 
-        public AcademicDegree(Employee employee, string dissertationTitle, int year, string scienceArea)
-            : base(employee)
+        public AcademicDegree(Employee employee, string dissertationTitle, int year, string scienceArea): base(employee)
         {
             DissertationTitle = dissertationTitle;
             Year = year;

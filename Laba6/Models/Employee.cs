@@ -11,6 +11,7 @@ namespace Laba6
         public string Name { get; set; }
         public double BaseSalary { get; set; }
         public IBankService BankService { get; set; }
+        public abstract double GetCreditApprovalProbability();
 
         public Employee(string name, double baseSalary, IBankService bankService)
         {
